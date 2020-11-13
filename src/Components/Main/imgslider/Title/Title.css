@@ -1,0 +1,11 @@
+.Title {
+    width: 100%;
+    color: #fff;
+    display: block;
+    align-items: center;
+    padding-top: 20%;
+    margin-left: 10%;
+    float: left;
+}
+
+.Title h1 {text-transform: uppercase;word-spacing: 4px;}

@@ -1,0 +1,9 @@
+.Services {
+    overflow: hidden;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: 100vh;
+    color:#99db48;
+    width: 100%;
+}
+.Services h2{color: #60892fc2; font-size: 30px; margin-top: 10%; text-align: center;}

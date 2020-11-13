@@ -1,0 +1,11 @@
+.Logo2 {
+  padding: 25% 10% 10% 10%;
+  height: 100%;
+}
+.Logo2 img {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 8px 6px -6px black;
+}

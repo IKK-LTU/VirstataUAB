@@ -1,0 +1,12 @@
+.About {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #61892f;
+    height: 100vh;
+    padding:2%;
+    /* justify-content: center; */
+}
+span.blockhalf {
+    vertical-align: top;
+    display: inline-block;
+    width: 49.2%;
+}

@@ -1,0 +1,8 @@
+.Nav {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 10px;
+    background-color: rgba(65, 63, 63, 0.356);
+}

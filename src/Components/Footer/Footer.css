@@ -1,0 +1,17 @@
+.Foote {
+    height: auto;
+    text-decoration: none;
+    background-color:#61892f ; /*#61892f  #61fc07c9;*/
+    font-size: 17px;
+
+}
+.Foote ul{
+    display: block;
+    text-align: center;
+}
+.Foote p {
+    padding-bottom: 2%;
+    margin-bottom: 0px;
+    display:block;
+    text-align: center;
+}
