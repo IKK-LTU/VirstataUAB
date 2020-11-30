@@ -1,45 +1,49 @@
+.ServiceList {
+  background-color: rgba(235, 235, 235, 0.178);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 250px;
+  height: 400px;
+  flex-wrap: wrap;
+  margin: 5% 0 
+  
+}
+.ServiceList:hover {
+  opacity: 1;
+  background-color: rgba(216, 202, 202, 0.178);
+}
 
-.ServiceList {
-    width: 15%;
-}
-.ServiceList ul {
-    padding: 0;
-}
-.ServiceList {
-    list-style: none;
-    justify-content: space-between;
-    margin: 5% 1% 0 1%;
-    vertical-align: top;
-    /* margin-right: 2%; */
-    display: inline-block;
-    overflow: hidden;
-    border-radius: 5px;
-    background-color: rgba(235, 235, 235, 0.178);
-    opacity: 1;
-    height: 50%;
-    
-}
-.ServiceList:hover {opacity: 1;background-color: rgba(216, 202, 202, 0.178);}
-.ServiceList a {
-    text-decoration: none; 
-    
-}
 .ServiceList h4 {
-    text-transform: uppercase;
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    text-decoration: none; 
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  
 }
-.ServiceList p{
-    overflow: hidden;
-    text-decoration: none;
-    font-size: 1.5em;
-    margin-bottom: 0.83em;
-    font-size: 90%;
-    line-height: 145%;
-    letter-spacing: 1px;
-    font-weight: 520;
-    font-size: 15px;
-    color: rgb(255, 255, 255);
-    
+
+.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+  display: flex;
+}
+
+.ServiceList p {
+  overflow: hidden;
+  text-decoration: none;
+  font-size: 1.5em;
+  margin-bottom: 0.83em;
+  font-size: 90%;
+  line-height: 145%;
+  letter-spacing: 1px;
+  font-weight: 520;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-items: baseline;
 }

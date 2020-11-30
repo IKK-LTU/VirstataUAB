@@ -3,10 +3,8 @@ import React from 'react';
 import classes from "./ServiceList.css";
 
 const ServicesList = (props) => (
-        <ul className={classes.ServiceList}>
-            <li >
-                <a  href={props.link}>
-                    <h4 style={{marginBottom: "35px"}}>
+        <div className={classes.ServiceList}>
+                    <h4 style={{marginBottom: "10px"}}>
                     {props.headline}</h4>
 
                     <p> {props.text}
@@ -19,8 +17,6 @@ const ServicesList = (props) => (
                                     letterSpacing: "0.5px",
                      }} >DAUGIAU!</strong>
                      </p>
-                </a>
-            </li>
-        </ul> 
+        </div> 
 );
 export default ServicesList;

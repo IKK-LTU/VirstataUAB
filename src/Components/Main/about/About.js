@@ -6,12 +6,12 @@ import Text from "./Info/Text";
 
 const About = (props) => (
   <div className={classes.About}>
-    <span className={classes.blockhalf}>
+    <div className={classes.About_box}>
         <Text />
-    </span>
-    <span className={classes.blockhalf}>
+    </div>
+    <div className={classes.About_box}>
         <Logo2 />
-    </span>
+    </div>
   </div>
 );
 

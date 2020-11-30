@@ -1,0 +1,27 @@
+.Mission {
+    height:100vh;
+    width:auto;
+    padding-top: 100px;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.2)),url("../../Img/mission.jpg");
+    text-align: center;
+    vertical-align: middle;
+    margin: 1px;
+    padding: 10%;
+    border: 1px solid #000;
+    border-radius: 3px;
+    background-attachment: fixed;
+    
+}
+.Mission_Text {
+    height: 100%;
+    width: auto;
+    background-color: rgba(114, 153, 197, 0.274);
+    border-radius: 5px;
+    padding: 5%;
+}

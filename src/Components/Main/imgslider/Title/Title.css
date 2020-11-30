@@ -3,9 +3,11 @@
     color: #fff;
     display: block;
     align-items: center;
-    padding-top: 20%;
-    margin-left: 10%;
+    padding: 3%;
+    margin-top: -5%;
     float: left;
+    /* background-color: rgba(197, 197, 197, 0.089);
+    border-radius: 20px; */
 }
 
-.Title h1 {text-transform: uppercase;word-spacing: 4px;}
+.Title h1 {text-transform: uppercase; word-spacing: 4px; font-size: 200%;}

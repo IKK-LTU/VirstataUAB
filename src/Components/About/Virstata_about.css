@@ -1,0 +1,10 @@
+.Certificate {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.Certificates {
+    display: flex;
+    justify-content: space-around;
+    border: 1 solid rgb(0, 0, 0);
+}

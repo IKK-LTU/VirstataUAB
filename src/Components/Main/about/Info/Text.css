@@ -1,3 +1,18 @@
 .Text {
-    padding: 20% 10% 10% 10%;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.Text_Icon {
+  border-radius: 50%;
+  border: 1px solid rgb(153, 219, 72);
+  height: 100px;
+  width: 100px;
+  background-color: rgb(255, 255, 255);
+}
+.Text p,
+.Text h3 {
+  width: 100%;
 }
