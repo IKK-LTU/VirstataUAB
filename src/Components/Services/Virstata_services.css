@@ -1,10 +1,10 @@
-/* .services{
+.services{
     display: inline-block;
     margin: 0 5%;
-    background-color: rgb(185, 185, 185);
+    /* background-color: rgb(185, 185, 185); */
     width: 90%;
     height: 100vh;
-} */
+}
 
 .Filter {
   width: 100%;
@@ -16,6 +16,7 @@
   text-decoration: uppercase;
 }
 .Filter_Item {
+  cursor: pointer;
   color: #fff;
   border: 1px solid #000;
   background-size: cover;

@@ -18,9 +18,9 @@ const ImageGrid = (props) => {
               <ImageGallery
                 items={props.items}
                 showPlayButton={false}
-            autoPlay={true}
-            slideDuration={900}
-            slideInterval={7000}
+                autoPlay={true}
+                slideDuration={900}
+                slideInterval={7000}
               />
             
           </div>

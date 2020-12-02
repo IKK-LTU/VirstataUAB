@@ -21,7 +21,7 @@ function Virstata_services() {
     {
       id:0,
       imagess: BetonavimasImg,
-      title: "Betonavimmo darbai",
+      title: "Betonavimo darbai",
        description: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
        background: im1,
     },
@@ -69,6 +69,14 @@ function Virstata_services() {
   console.log(Services[0].imagess);
   console.log(BetonavimasImg);
 
+  const [active, setActive] = useState(0);
+
+  function handleIdChange(e)  {
+    setActive(e.target.id);
+    console.log(e.target.id);
+    return setActive(e.target.id);
+  }
+  
 
     return (
       <div style={{ margin: 0}}>
@@ -85,19 +93,28 @@ function Virstata_services() {
                 Services.background +
                 ")",
             }}
+            id={Services.id}
+            onClick={handleIdChange}
             > {Services.title} </div>
           )}
         </div>
 
         <div className={classes.services}>
           
-          { Services.map((Services) =>
+          {/* {Services.id = 0 ? : Services.map((Services) =>
             < ImageGrid
             title={Services.title}
             description={Services.description}
             items={Services.imagess}
             setSelectedImg={setSelectedImg} />
-          ) }
+          ) } */}
+
+          < ImageGrid 
+            title={Services[active].title}
+            description={Services[active].description}
+            items={Services[active].imagess}
+            setSelectedImg={setSelectedImg} />
+
           
         </div>
           

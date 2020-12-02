@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { motion } from 'framer-motion';
-import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 import i1 from "./img/trs.jpeg";
 import i2 from "./img/aa.jpg";
 import i3 from "./img/bb.jpg";
 import i4 from "./img/vv.jpg";
 import "./Slider.scss";
-import classes from "./Slider.css";
+import "./Slider.css";
 import Title from "./Title/Title";
 
 
@@ -21,10 +20,10 @@ function Slider() {
     
   const [x, setX] = useState(0);
   
-  const goLeft = () => {
-    console.log(x);
-    x <= 0 ? setX(0) : setX(x + 100);
-  };
+  // const goLeft = () => {
+  //   console.log(x);
+  //   x <= 0 ? setX(0) : setX(x + 100);
+  // };
   
   const goRight = () => {
     console.log(x);
@@ -54,24 +53,7 @@ function Slider() {
           )
         })
         }
-        {/* <button id="goLeft" onClick={goLeft}><FaArrowLeft className="Slide_icon"/></button>
-        <button id="goRight" onClick={goRight}><FaArrowRight className="Slide_icon"/></button> */}
       </div>
     );
 }
 export default Slider;
-
-
-// {/* <div
-// className={classes.Slider}
-// style={{
-//   backgroundAttachment: 'fixed',
-//   backgroundImage:
-//     "linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(" +
-//     One +
-//     ")",
-// }}
-                
-// >
-// <Title />
-// </div> */}

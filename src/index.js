@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Switch, Route, useLocation,  useEffect } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, useParams} from 'react-router-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 
 import Home from './Components/Main/Virstata';
 import Services from './Components/Services/Virstata_services'
-import About from './Components/About/Virstata_about';
+// import About from './Components/Main/about/About';
 import Contacts from './Components/Contacts/Virstata_contact';
 
 
@@ -17,13 +17,16 @@ ReactDOM.render((
   
   <Router>
     <div>
-        <ScrollToTop />
+    <ScrollToTop />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/paslaugos" component={Services} />
-          <Route path="/apie" component={About} />
+          <Route path="/details" component={Home} >
+          
+          </Route>
           <Route path="/kontaktai" component={Contacts}/>
         </Switch>
+        
       <Footer />
     </div>
   </Router>
