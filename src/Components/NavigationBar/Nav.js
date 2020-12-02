@@ -5,11 +5,11 @@ import Meniu from './meniu/meniu';
 import Links from './links/Links';
 
 const Nav = (props) => (
-      <div style={props.styles}>
-        <Logo />
-        <Meniu styles={props.stylesMeniu}/>
-        <Links />
-      </div>
-    );
+  <div style={props.styles}>
+    <Logo />
+    <Meniu styles={props.stylesMeniu} />
+    <Links />
+  </div>
+);
 
 export default Nav;
