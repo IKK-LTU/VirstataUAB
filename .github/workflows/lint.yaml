@@ -1,4 +1,4 @@
-name: lint
+name: CI
 on:
   pull_request:
   push:
@@ -6,7 +6,7 @@ on:
       - master
       - dev
 jobs:
-  tests:
+  linting:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -20,6 +20,6 @@ jobs:
       - name: Install Packages
         run: npm install
       - name: Eslint
-        run: npm run eslint . --ext .js
+        run: ./node_modules/.bin/eslint . --ext .js
       - name: Prettier
-        run: npm run prettier -c .
+        run: ./node_modules/prettier/bin-prettier.js -c .
