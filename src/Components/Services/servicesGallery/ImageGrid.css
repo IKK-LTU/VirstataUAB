@@ -1,11 +1,11 @@
 .ImageGrid {
   display: flex;
-    width: 100%;
-    height: 80vh;
-    border-top: 1px solid #61892f;
-    border-bottom: 1px solid #61892f;
-    /* background-color:rgba(189, 188, 188, 0.301); */
-    /* border-radius: 5px; */
+  width: 100%;
+  height: 80vh;
+  border-top: 1px solid #61892f;
+  border-bottom: 1px solid #61892f;
+  /* background-color:rgba(189, 188, 188, 0.301); */
+  /* border-radius: 5px; */
 }
 .ImageGrid_Gallery {
   display: flex;
@@ -16,7 +16,7 @@
   vertical-align: top;
   word-wrap: break-word;
 }
-.ImageGrid_Gallery h2{
+.ImageGrid_Gallery h2 {
   text-align: center;
   letter-spacing: 1px;
 }
@@ -26,4 +26,3 @@
   text-decoration: none;
   line-height: 130%;
 }
-

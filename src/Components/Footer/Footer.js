@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
-import Links from '../NavigationBar/links/Links';
-import Navigations from './Navigations/Navigat';
-import classes from './Footer.css';
+import Links from '../NavigationBar/links/Links'
+import Navigations from './Navigations/Navigat'
+import classes from './Footer.css'
 
 class Footer extends Component {
   render() {
@@ -13,7 +13,7 @@ class Footer extends Component {
 
         <p>Copyright &copy; 2019 by UAB "Virstata". All rights reserved.</p>
       </footer>
-    );
+    )
   }
 }
-export default Footer;
+export default Footer

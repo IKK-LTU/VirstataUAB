@@ -1,20 +1,15 @@
-import React from 'react';
-import ImageGallery from 'react-image-gallery';
-import './styles/image-gallery.scss';
-import classes from './ImageGrid.css';
+import React from 'react'
+import ImageGallery from 'react-image-gallery'
+import './styles/image-gallery.scss'
+import classes from './ImageGrid.css'
 
 const ImageGrid = (props) => (
-
   <div className={classes.ImageGrid}>
     <div className={classes.ImageGrid_Gallery}>
-      <h2>
-        {' '}
-        {props.title}
-      </h2>
+      <h2> {props.title}</h2>
       <p>{props.description}</p>
     </div>
     <div className="abcd">
-
       <ImageGallery
         items={props.items}
         showPlayButton={false}
@@ -22,11 +17,10 @@ const ImageGrid = (props) => (
         slideDuration={900}
         slideInterval={7000}
       />
-
     </div>
   </div>
-);
-export default ImageGrid;
+)
+export default ImageGrid
 
 // {/* <Carousel itemsToShow={2}>
 

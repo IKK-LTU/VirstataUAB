@@ -1,6 +1,6 @@
-import img1 from '../aa.jpg';
-import img2 from '../bb.jpg';
-import img3 from '../vv.jpg';
+import img1 from '../aa.jpg'
+import img2 from '../bb.jpg'
+import img3 from '../vv.jpg'
 
 const TrinkeliuKlojimasImg = [
   {
@@ -39,5 +39,5 @@ const TrinkeliuKlojimasImg = [
     original: img3,
     thumbnail: img3,
   },
-];
-export default TrinkeliuKlojimasImg;
+]
+export default TrinkeliuKlojimasImg

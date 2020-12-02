@@ -1,9 +1,8 @@
-import React from 'react';
-import { FcCheckmark } from 'react-icons/fc';
-import classes from './OurMission.css';
+import React from 'react'
+import { FcCheckmark } from 'react-icons/fc'
+import classes from './OurMission.css'
 
 const OurMission = (props) => (
-
   <div className={classes.OurMission}>
     <h1>Garantuojame!</h1>
     <div className={classes.OurMission_box}>
@@ -21,7 +20,6 @@ const OurMission = (props) => (
       </div>
     </div>
   </div>
+)
 
-);
-
-export default OurMission;
+export default OurMission

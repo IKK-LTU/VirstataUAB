@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 
-import Logo from './logo/logo';
-import Meniu from './meniu/meniu';
-import Links from './links/Links';
+import Logo from './logo/logo'
+import Meniu from './meniu/meniu'
+import Links from './links/Links'
 
 const Nav = (props) => (
   <div style={props.styles}>
@@ -10,6 +10,6 @@ const Nav = (props) => (
     <Meniu styles={props.stylesMeniu} />
     <Links />
   </div>
-);
+)
 
-export default Nav;
+export default Nav

@@ -1,16 +1,15 @@
-import React from 'react';
-import classes from './Gallery.css';
+import React from 'react'
+import classes from './Gallery.css'
 
-import image1 from './Images/Betonavimas/aa.jpg';
-import image2 from './Images/Betonavimas/bb.jpg';
-import image3 from './Images/Betonavimas/vv.jpg';
+import image1 from './Images/Betonavimas/aa.jpg'
+import image2 from './Images/Betonavimas/bb.jpg'
+import image3 from './Images/Betonavimas/vv.jpg'
 
 const images = [
   { id: 1, src: image1, service: 'Betonavimas' },
   { id: 2, src: image2, service: 'Betonavimas' },
   { id: 3, src: image3, service: 'Betonavimas' },
-
-];
+]
 
 function Gallery() {
   return (
@@ -19,6 +18,6 @@ function Gallery() {
         <img alt="Images" key={images.id} src={images.src} />
       ))}
     </div>
-  );
+  )
 }
-export default Gallery;
+export default Gallery

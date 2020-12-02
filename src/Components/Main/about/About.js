@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 
-import classes from './About.css';
-import Logo2 from './logo/Logo2';
-import Text from './Info/Text';
+import classes from './About.css'
+import Logo2 from './logo/Logo2'
+import Text from './Info/Text'
 
 const About = (props) => (
   <div className={classes.About}>
@@ -13,6 +13,6 @@ const About = (props) => (
       <Logo2 />
     </div>
   </div>
-);
+)
 
-export default About;
+export default About

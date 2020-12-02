@@ -1,14 +1,10 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import classes from './Contact_image.css';
-import Image from './undraw_contact_us.png';
+import React from 'react'
+import { motion } from 'framer-motion'
+import classes from './Contact_image.css'
+import Image from './undraw_contact_us.png'
 
 const Contact_image = () => (
-  <motion.div
-    className={classes.contact_us_photo}
-    initial={{ x: -2000 }}
-    animate={{ x: 0 }}
-  >
+  <motion.div className={classes.contact_us_photo} initial={{ x: -2000 }} animate={{ x: 0 }}>
     <motion.img
       alt="contact-us"
       src={Image}
@@ -17,7 +13,6 @@ const Contact_image = () => (
       transition={{ delay: 0.1 }}
     />
   </motion.div>
+)
 
-);
-
-export default Contact_image;
+export default Contact_image
