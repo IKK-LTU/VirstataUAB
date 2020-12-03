@@ -31,7 +31,7 @@
 
   p::before {
     display: inline;
-    content: "⚠ ";
+    content: '⚠ ';
   }
 
   input {
@@ -65,8 +65,13 @@
     font-weight: bold;
   }
 
+<<<<<<< HEAD
   button[type="submit"],
   input[type="submit"] {
+=======
+  button[type='submit'],
+  input[type='submit'] {
+>>>>>>> 8de82e85691d9d94dd98b9a587011e2f47145186
     background: #60892fd2;
     color: rgba(255, 255, 255, 0.938);
     text-transform: uppercase;
@@ -78,6 +83,7 @@
     letter-spacing: 10px;
   }
 
+<<<<<<< HEAD
   button[type="submit"]:hover,
   input[type="submit"]:hover {
     background: #486d1b5d;
@@ -86,6 +92,16 @@
   button[type="submit"]:active,
   input[type="button"]:active,
   input[type="submit"]:active {
+=======
+  button[type='submit']:hover,
+  input[type='submit']:hover {
+    background: #486d1b5d;
+  }
+
+  button[type='submit']:active,
+  input[type='button']:active,
+  input[type='submit']:active {
+>>>>>>> 8de82e85691d9d94dd98b9a587011e2f47145186
     transition: 0.3s all;
     transform: translateY(3px);
     border: 1px solid transparent;
@@ -96,6 +112,7 @@
     opacity: 0.4;
   }
 
+<<<<<<< HEAD
   input[type="button"]:hover {
     transition: 0.3s all;
   }
@@ -103,10 +120,19 @@
   button[type="submit"],
   input[type="button"],
   input[type="submit"] {
+=======
+  input[type='button']:hover {
+    transition: 0.3s all;
+  }
+
+  button[type='submit'],
+  input[type='button'],
+  input[type='submit'] {
+>>>>>>> 8de82e85691d9d94dd98b9a587011e2f47145186
     -webkit-appearance: none;
   }
 
-  button[type="button"] {
+  button[type='button'] {
     display: block;
     appearance: none;
     background: #333;

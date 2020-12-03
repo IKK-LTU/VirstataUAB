@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /** @format */
 
 import React from "react";
@@ -26,6 +27,32 @@ const ImageGrid = (props) => {
 };
 export default ImageGrid;
 
+=======
+import React from 'react'
+import ImageGallery from 'react-image-gallery'
+import './styles/image-gallery.scss'
+import classes from './ImageGrid.css'
+
+const ImageGrid = (props) => (
+  <div className={classes.ImageGrid}>
+    <div className={classes.ImageGrid_Gallery}>
+      <h2> {props.title}</h2>
+      <p>{props.description}</p>
+    </div>
+    <div className="abcd">
+      <ImageGallery
+        items={props.items}
+        showPlayButton={false}
+        autoPlay
+        slideDuration={900}
+        slideInterval={7000}
+      />
+    </div>
+  </div>
+)
+export default ImageGrid
+
+>>>>>>> 8de82e85691d9d94dd98b9a587011e2f47145186
 // {/* <Carousel itemsToShow={2}>
 
 //             {docs.map(docs => <img

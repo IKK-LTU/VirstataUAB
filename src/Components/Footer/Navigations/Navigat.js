@@ -1,8 +1,14 @@
+<<<<<<< HEAD
 /** @format */
 
 import React from "react";
 import { Link } from "react-router-dom";
 import classes from "./Navigat.css";
+=======
+import React from 'react'
+import { Link } from 'react-router-dom'
+import classes from './Navigat.css'
+>>>>>>> 8de82e85691d9d94dd98b9a587011e2f47145186
 
 const Navigat = () => (
   <div className={classes.Navigatmeniu}>
@@ -21,6 +27,12 @@ const Navigat = () => (
       </Link>
     </ul>
   </div>
+<<<<<<< HEAD
 );
 
 export default Navigat;
+=======
+)
+
+export default Navigat
+>>>>>>> 8de82e85691d9d94dd98b9a587011e2f47145186

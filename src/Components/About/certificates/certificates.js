@@ -9,8 +9,9 @@ const Certificate = (props) => (
     className={classes.Certificates}
     initial={{ x: -2000 }}
     animate={{ x: 0 }}
-    transition={{ delay: props.delay }}>
-    <img alt="certificate" src={props.CertificateSrc}></img>
+    transition={{ delay: props.delay }}
+  >
+    <img alt="certificate" src={props.CertificateSrc} />
   </motion.div>
-);
-export default Certificate;
+)
+export default Certificate

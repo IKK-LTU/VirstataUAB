@@ -13,7 +13,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import im1 from "./certificates/Certificates_images/certificate_img.jpg";
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger)
 
 function Virstata(props) {
   const CertificateImg = [
@@ -41,6 +41,25 @@ function Virstata(props) {
 
   const revealRefs = useRef([]);
   revealRefs.current = [];
+  ]
+  const navMeniuStyle = {
+    color: '#fff',
+  }
+  const navStyle = {
+    display: 'flex',
+    position: 'fixed',
+    justifyContent: 'space-between',
+    width: '100%',
+    padding: '10px 10px',
+    backgroundColor: 'rgba(65, 63, 63, 0.356)',
+    zIndex: '1',
+    boxShadow: '0 4px 3px 0px rgb(20, 20, 20)',
+  }
+
+  const headerRef = useRef(null)
+
+  const revealRefs = useRef([])
+  revealRefs.current = []
 
   useEffect(() => {
     gsap.from(headerRef.current, {
@@ -128,3 +147,13 @@ function Virstata(props) {
 }
 
 export default Virstata;
+          {CertificateImg.map((CertificateImg) => (
+            <Certificates delay={CertificateImg.delay} CertificateSrc={CertificateImg.img} />
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Virstata

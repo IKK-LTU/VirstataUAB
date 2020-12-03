@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /** @format */
 
 import React from "react";
@@ -10,12 +11,25 @@ const Modal = ({ selectedImg, setSelectedImg }) => {
       setSelectedImg(null);
     }
   };
+=======
+import React from 'react'
+import { motion } from 'framer-motion'
+import classes from './Modal.css'
+
+const Modal = ({ selectedImg, setSelectedImg }) => {
+  const handleClick = (e) => {
+    if (e.target.classList.contains(classes.backdrop)) {
+      setSelectedImg(null)
+    }
+  }
+>>>>>>> 8de82e85691d9d94dd98b9a587011e2f47145186
 
   return (
     <motion.div
       className={classes.backdrop}
       onClick={handleClick}
       initial={{ opacity: 0 }}
+<<<<<<< HEAD
       animate={{ opacity: 1 }}>
       <motion.img
         src={selectedImg}
@@ -28,3 +42,18 @@ const Modal = ({ selectedImg, setSelectedImg }) => {
 };
 
 export default Modal;
+=======
+      animate={{ opacity: 1 }}
+    >
+      <motion.img
+        src={selectedImg}
+        alt="enlarge pic"
+        initial={{ y: '-100vh' }}
+        animate={{ y: 0 }}
+      />
+    </motion.div>
+  )
+}
+
+export default Modal
+>>>>>>> 8de82e85691d9d94dd98b9a587011e2f47145186

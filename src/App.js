@@ -1,8 +1,14 @@
+<<<<<<< HEAD
 /** @format */
 
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+=======
+import React from 'react'
+import logo from './logo.svg'
+import './App.css'
+>>>>>>> 8de82e85691d9d94dd98b9a587011e2f47145186
 
 function App() {
   return (
@@ -21,7 +27,7 @@ function App() {
         </a>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
