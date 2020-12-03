@@ -1,3 +1,5 @@
+/** @format */
+
 import React from "react";
 
 import classes from "./About.css";
@@ -7,10 +9,10 @@ import Text from "./Info/Text";
 const About = (props) => (
   <div className={classes.About}>
     <div className={classes.About_box}>
-        <Text />
+      <Text />
     </div>
     <div className={classes.About_box}>
-        <Logo2 />
+      <Logo2 />
     </div>
   </div>
 );

@@ -1,13 +1,14 @@
+/** @format */
 
-.aa{
-    background-color: rgb(37, 37, 37);
+.aa {
+  background-color: rgb(37, 37, 37);
 }
 .Certificates {
-    display: flex;
-    justify-content: space-around;
-    border: 1 solid rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-around;
+  border: 1 solid rgb(0, 0, 0);
 }
-.Certificate h2{
-    text-transform: uppercase;
-    text-align: center;
+.Certificate h2 {
+  text-transform: uppercase;
+  text-align: center;
 }

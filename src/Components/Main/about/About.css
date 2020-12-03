@@ -1,26 +1,28 @@
+/** @format */
+
 .About {
-    background-color: rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid #61892f;
-    height: auto;
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding:3%;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #61892f;
+  height: auto;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 3%;
 }
 .About_box {
-    height: 100%;
-    width: 90vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    justify-items: center;
+  height: 100%;
+  width: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-items: center;
 }
 .About img {
-    height: 400px;
-    width: 500px;
-    border: 1px solid rgb(153, 219, 72);
-    border-radius: 10px;
-    box-shadow: 0 8px 6px -6px black;
-    justify-items: center;
-  }
+  height: 400px;
+  width: 500px;
+  border: 1px solid rgb(153, 219, 72);
+  border-radius: 10px;
+  box-shadow: 0 8px 6px -6px black;
+  justify-items: center;
+}

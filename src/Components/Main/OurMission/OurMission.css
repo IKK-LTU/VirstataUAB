@@ -1,9 +1,11 @@
+/** @format */
+
 .OurMission {
-  padding:10px;
+  padding: 10px;
   background-color: rgba(0, 0, 0, 0.1);
   margin: 0;
   height: auto;
-  width: 100%
+  width: 100%;
 }
 .OurMission h1 {
   color: rgb(48, 160, 20);
@@ -16,16 +18,15 @@
   opacity: 1;
   display: flex;
   flex-wrap: wrap;
-  align-items:baseline;
-  justify-content:space-around;
-  
+  align-items: baseline;
+  justify-content: space-around;
 }
 .OurMission_item {
   width: 400px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content:space-around;
+  justify-content: space-around;
   border-radius: 50%;
 }
 

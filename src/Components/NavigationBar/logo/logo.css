@@ -1,10 +1,12 @@
+/** @format */
+
 .LOgo {
-    margin-top: 1%;
-    display: flex;
+  margin-top: 1%;
+  display: flex;
 }
 .LOgo img {
-    border: 3px inset #000;
-    border-radius: 3px;
-    height: 85px;
-    width: auto;
+  border: 3px inset #000;
+  border-radius: 3px;
+  height: 85px;
+  width: auto;
 }

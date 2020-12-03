@@ -1,13 +1,19 @@
+/** @format */
+
 .Title {
-    width: 100%;
-    color: #fff;
-    display: block;
-    align-items: center;
-    padding: 3%;
-    margin-top: -5%;
-    float: left;
-    /* background-color: rgba(197, 197, 197, 0.089);
+  width: 100%;
+  color: #fff;
+  display: block;
+  align-items: center;
+  padding: 3%;
+  margin-top: -5%;
+  float: left;
+  /* background-color: rgba(197, 197, 197, 0.089);
     border-radius: 20px; */
 }
 
-.Title h1 {text-transform: uppercase; word-spacing: 4px; font-size: 200%;}
+.Title h1 {
+  text-transform: uppercase;
+  word-spacing: 4px;
+  font-size: 200%;
+}

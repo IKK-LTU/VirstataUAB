@@ -1,7 +1,9 @@
-.Slider{
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
+/** @format */
+
+.Slider {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
 }
 /* background:  linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.2)); */

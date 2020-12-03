@@ -1,9 +1,11 @@
+/** @format */
+
 .Nav {
-    display: flex;
-    position: fixed;
-    justify-content: space-between;
-    width: 100%;
-    padding: 10px 10px;
-    background-color: rgba(65, 63, 63, 0.356);
-    box-shadow: 0 8px 6px -6px black;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 10px;
+  background-color: rgba(65, 63, 63, 0.356);
+  box-shadow: 0 8px 6px -6px black;
 }

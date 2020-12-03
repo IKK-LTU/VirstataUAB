@@ -1,28 +1,29 @@
+/** @format */
 
 .Navigatmeniu {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-} 
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
 .Navigatmeniu ul {
-    display: inline-block;
-    justify-content: space-between;
-    width: 100%;
-    color: #000;
-    margin: 0;
-    padding: 0;
+  display: inline-block;
+  justify-content: space-between;
+  width: 100%;
+  color: #000;
+  margin: 0;
+  padding: 0;
 }
 .Navigatmeniu li {
-    display: block;
-    padding-top: 2%;
+  display: block;
+  padding-top: 2%;
 }
 .Navigatmeniu a {
-    display: block;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
+  display: block;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 
 .Navigatmeniu a:hover {
-    display: block;
-    text-decoration: none;
-    font-weight: bold;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
 }
