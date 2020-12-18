@@ -1,20 +1,3 @@
-<<<<<<< HEAD
-/** @format */
-
-.contactUs_details {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.contactUs_info,
-.contactUs_form {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-=======
 .contactUs_details {
   display: inline-block;
   width: 100%;
@@ -24,7 +7,6 @@
 .contactUs_info {
   display: inline-block;
   width: 49%;
->>>>>>> 8de82e85691d9d94dd98b9a587011e2f47145186
   height: 100%;
   border: none;
 }
@@ -33,11 +15,7 @@
   padding-top: 5%;
   vertical-align: top;
 }
-<<<<<<< HEAD
-.contactUs_form {
-=======
 .contactUs_details_img img {
->>>>>>> 8de82e85691d9d94dd98b9a587011e2f47145186
   border-radius: 5px;
   width: auto;
   height: auto;

@@ -1,5 +1,3 @@
-/** @format */
-
 $ig-small-screen: 768px !default;
 $ig-xsmall-screen: 480px !default;
 $ig-white: #fff !default;
@@ -9,7 +7,7 @@ $ig-background-black: rgba(0, 0, 0, 0.4) !default;
 $ig-transparent: rgba(0, 0, 0, 0) !default;
 
 @mixin vendor-prefix($name, $value) {
-  @each $vendor in ("-webkit-", "-moz-", "-ms-", "-o-", "") {
+  @each $vendor in ('-webkit-', '-moz-', '-ms-', '-o-', '') {
     #{$vendor}#{$name}: #{$value};
   }
 }
@@ -116,7 +114,6 @@ $ig-transparent: rgba(0, 0, 0, 0) !default;
         height: 72px;
         width: 36px;
       }
-<<<<<<< HEAD
     }
 
     @media (max-width: $ig-xsmall-screen) {
@@ -126,17 +123,6 @@ $ig-transparent: rgba(0, 0, 0, 0) !default;
       }
     }
 
-=======
-    }
-
-    @media (max-width: $ig-xsmall-screen) {
-      .image-gallery-svg {
-        height: 48px;
-        width: 24px;
-      }
-    }
-
->>>>>>> 8de82e85691d9d94dd98b9a587011e2f47145186
     &[disabled] {
       cursor: disabled;
       opacity: 0.6;
@@ -154,11 +140,7 @@ $ig-transparent: rgba(0, 0, 0, 0) !default;
   // End of Icon styles
 
   .image-gallery {
-<<<<<<< HEAD
-    @include vendor-prefix("user-select", none);
-=======
     @include vendor-prefix('user-select', none);
->>>>>>> 8de82e85691d9d94dd98b9a587011e2f47145186
     -webkit-tap-highlight-color: $ig-transparent;
     position: relative;
 

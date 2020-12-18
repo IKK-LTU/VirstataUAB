@@ -1,8 +1,6 @@
-/** @format */
-
-import React from "react";
-import classes from "./certificates.css";
-import { motion } from "framer-motion";
+import React from 'react'
+import { motion } from 'framer-motion'
+import classes from './certificates.css'
 
 const Certificate = (props) => (
   <motion.div

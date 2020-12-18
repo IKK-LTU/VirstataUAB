@@ -1,24 +1,3 @@
-<<<<<<< HEAD
-/** @format */
-
-import React, { useState } from "react";
-import { motion } from "framer-motion";
-import i1 from "./img/trs.jpeg";
-import i2 from "./img/aa.jpg";
-import i3 from "./img/bb.jpg";
-import i4 from "./img/vv.jpg";
-import "./Slider.scss";
-import "./Slider.css";
-import Title from "./Title/Title";
-
-function Slider() {
-  let sliderArr = [
-    { im: <motion.img src={i1} alt="img1" />, text: <Title /> },
-    {
-      im: <motion.img src={i3} alt="img3" />,
-      text:
-        "MISIJA - Kokybiškai, greitai ir profesionaliai teikti paslaugas savo klientams.",
-=======
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import i1 from './img/trs.jpeg'
@@ -35,23 +14,10 @@ function Slider() {
     {
       im: <motion.img src={i3} alt="img3" />,
       text: 'MISIJA - Kokybiškai, greitai ir profesionaliai teikti paslaugas savo klientams.',
->>>>>>> 8de82e85691d9d94dd98b9a587011e2f47145186
     },
     {
       im: <motion.img src={i2} alt="img2" />,
       text:
-<<<<<<< HEAD
-        "VIZIJA - Gerinti darbo sąlygas įmonės darbuotojams ir užtikrinti sėkmingą įmonės plėtrą.",
-    },
-    {
-      im: <motion.img src={i4} alt="img4" />,
-      text:
-        "TIKSLAS - Nuolat tobulinti teikiamų paslaugų ir produkcijos kokybę.",
-    },
-  ];
-
-  const [x, setX] = useState(0);
-=======
         'VIZIJA - Gerinti darbo sąlygas įmonės darbuotojams ir užtikrinti sėkmingą įmonės plėtrą.',
     },
     {
@@ -61,7 +27,6 @@ function Slider() {
   ]
 
   const [x, setX] = useState(0)
->>>>>>> 8de82e85691d9d94dd98b9a587011e2f47145186
 
   // const goLeft = () => {
   //   console.log(x);
@@ -77,30 +42,6 @@ function Slider() {
     goRight()
   }, 2000)
 
-<<<<<<< HEAD
-  setTimeout(() => {
-    goRight();
-  }, 2000);
-
-  return (
-    <div className="Slider">
-      {sliderArr.map((item, index) => {
-        return (
-          <div
-            autoPlay={true}
-            key={index}
-            className="Slide"
-            style={{ transform: `translateX(${x}%)` }}>
-            {item.im}
-            <motion.h2 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-              {item.text}
-            </motion.h2>
-          </div>
-        );
-      })}
-    </div>
-  );
-=======
   return (
     <div className="Slider">
       {sliderArr.map((item, index) => (
@@ -113,6 +54,5 @@ function Slider() {
       ))}
     </div>
   )
->>>>>>> 8de82e85691d9d94dd98b9a587011e2f47145186
 }
 export default Slider
