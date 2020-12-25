@@ -15,7 +15,7 @@ import im3 from './servicesGallery/Images/terasa.jpg'
 import im4 from './servicesGallery/Images/trinkeles.jpg'
 import im5 from './servicesGallery/Images/tvora.jpg'
 
-function Virstata_services() {
+function VirstataServices() {
   const Services = [
     {
       id: 0,
@@ -115,7 +115,7 @@ function Virstata_services() {
     </div>
   )
 }
-export default Virstata_services
+export default VirstataServices
 
 // const navMeniuStyle = {
 //   color: '#000'}

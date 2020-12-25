@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react'
 import _ from 'lodash/fp'
 import { useForm } from 'react-hook-form'
@@ -20,7 +21,7 @@ function Form() {
           Turite klausimų ar norite pasikonsultuoti? Skambinkite arba palikite žinutę žemiau ir mes
           su Jumis susisieksime!{' '}
         </h3>
-        <label>Vardas</label>
+        <label htmlFor="firstName">Vardas</label>
         <input
           name="firstName"
           placeholder="Jūsų vardas"
@@ -36,25 +37,25 @@ function Form() {
         )}
         {_.get('firstName.type', errors) === 'pattern' && <p>Alphabetical characters only</p>}
 
-        <label>El. paštas</label>
+        <label htmlFor="email">El. paštas</label>
         <input
-          name="lastName"
+          name="email"
           placeholder="Jūsų elektroninis paštas"
           required
           ref={register({ pattern: /^[A-Za-z]+$/i })}
         />
-        {_.get('lastName.type', errors) === 'pattern' && <p>Alphabetical characters only</p>}
+        {_.get('email.type', errors) === 'pattern' && <p>Alphabetical characters only</p>}
 
         <label>Telefono numeris</label>
         <input
-          name="lastName"
+          name="email"
           placeholder="Jūsų telefono numeris"
           required
           ref={register({ pattern: /^[A-Za-z]+$/i })}
         />
-        {_.get('lastName.type', errors) === 'pattern' && <p>Alphabetical characters only</p>}
+        {_.get('email.type', errors) === 'pattern' && <p>Alphabetical characters only</p>}
 
-        <label>Žinutė</label>
+        <label htmlFor="Message">Žinutė</label>
         <textarea
           id="body"
           type="message"
@@ -62,7 +63,7 @@ function Form() {
           placeholder=""
           ref={register({ pattern: /^[A-Za-z]+$/i })}
         />
-        {_.get('lastName.type', errors) === 'pattern' && <p>Alphabetical characters only</p>}
+        {_.get('email.type', errors) === 'pattern' && <p>Alphabetical characters only</p>}
         <input type="submit" />
       </form>
     </div>

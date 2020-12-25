@@ -1,5 +1,4 @@
-import React, { Component, useRef, useEffect } from 'react'
-import { Route, useRouteMatch, useParams } from 'react-router-dom'
+import React, { useRef, useEffect } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import ScrollToPlugin from 'gsap/ScrollToPlugin'
