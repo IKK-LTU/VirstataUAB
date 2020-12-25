@@ -4,7 +4,9 @@ import Wall from '../../Img/siena.jpeg'
 import classes from './Services.css'
 import ServiceList from './ServiceList/ServiceList'
 
-const Service = [
+class Services extends Component {
+  
+Service = [
   {
     headline: 'Betonavimo Darbai',
     Text:
@@ -38,8 +40,8 @@ const Service = [
     id: 5,
   },
 ]
-class Services extends Component {
   render() {
+    
     return (
       <div
         className={classes.Services}

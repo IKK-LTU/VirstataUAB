@@ -13,7 +13,7 @@ const Navigat = () => (
         <li>Paslaugos</li>
       </Link>
       <Link to="/apie">
-        <li>Apie UAB "Virstata"</li>
+        <li>Apie UAB Virstata</li>
       </Link>
       <Link to="/kontaktai">
         <li>Kontaktai</li>

@@ -3,11 +3,11 @@ import { motion } from 'framer-motion'
 import classes from './contact-us-details.css'
 import images from '../../Img/logo2.jpg'
 
-const Contacts_details = () => (
+const ContactsDetails = () => (
   <div className={classes.contactUs_details}>
     <motion.div className={classes.contactUs_info} initial={{ x: -1000 }} animate={{ x: 20 }}>
       <p>
-        <strong>Įmonė:</strong> UAB "Virstata"
+        <strong>Įmonė:</strong> UAB Virstata
       </p>
       <p>
         <strong>Įmonės kodas:</strong> 123456789
@@ -41,4 +41,4 @@ const Contacts_details = () => (
   </div>
 )
 
-export default Contacts_details
+export default ContactsDetails
