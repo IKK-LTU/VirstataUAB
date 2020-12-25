@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Virstata from '../../Main/Virstata'
 import classes from './meniu.css'
 
 const Meniu = (props) => (

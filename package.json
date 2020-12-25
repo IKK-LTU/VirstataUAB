@@ -47,7 +47,7 @@
     "postcss-normalize": "8.0.1",
     "postcss-preset-env": "6.7.0",
     "postcss-safe-parser": "4.0.1",
-    "react": "^16.13.1",
+    "react": "^16.14.0",
     "react-app-polyfill": "^1.0.6",
     "react-dev-utils": "^10.2.1",
     "react-dom": "^16.13.1",
@@ -56,6 +56,7 @@
     "react-image-gallery": "^1.0.8",
     "react-image-lightbox": "^5.1.1",
     "react-prefixer": "^2.0.1",
+    "react-router-dom": "^5.2.0",
     "react-scroll": "^1.8.1",
     "react-scroll-trigger": "^0.6.10",
     "resolve": "1.15.0",
@@ -159,5 +160,15 @@
     "sass": "^1.28.0",
     "sass-loader": "^8.0.2",
     "webpack": "^4.42.0"
-  }
+  },
+   "optionalDependencies": {
+    "lodash.isarray": "^4.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=15.0.0 <16.0.0"
+  },
+  "bundledDependencies": [
+    "@generated/foo",
+  ]
+}
 }

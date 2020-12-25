@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import ScrollToPlugin from 'gsap/ScrollToPlugin'
 import classes from './Virstata.css'
 import Slider from './imgslider/Slider'
 import About from './about/About'

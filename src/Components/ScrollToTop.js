@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { useLocation } from 'react-router-dom'
 
 export default function ScrollToTop() {
