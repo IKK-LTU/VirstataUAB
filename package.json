@@ -160,15 +160,5 @@
     "sass": "^1.28.0",
     "sass-loader": "^8.0.2",
     "webpack": "^4.42.0"
-  },
-   "optionalDependencies": {
-    "lodash.isarray": "^4.0.0"
-  },
-  "peerDependencies": {
-    "react": ">=15.0.0 <16.0.0"
-  },
-  "bundledDependencies": [
-    "@generated/foo",
-  ]
-}
+  }
 }
