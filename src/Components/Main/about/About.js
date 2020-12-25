@@ -4,7 +4,7 @@ import classes from './About.css'
 import Logo2 from './logo/Logo2'
 import Text from './Info/Text'
 
-const About = (props) => (
+const About = () => (
   <div className={classes.About}>
     <div className={classes.About_box}>
       <Text />

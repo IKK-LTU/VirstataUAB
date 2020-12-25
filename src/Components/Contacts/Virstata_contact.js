@@ -1,11 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Nav from '../NavigationBar/Nav'
 import ContactImage from './contact_us_image/Contact_image'
 import Form from './Form/Form'
 import ContactsDetails from './contact-us-details/contact-us-details'
 
-class Virstata_contacts extends Component {
-  render() {
+function VirstataContacts() {
     const navMeniuStyle = { color: '#fff' }
     const navStyle = {
       display: 'flex',
@@ -27,5 +26,5 @@ class Virstata_contacts extends Component {
       </div>
     )
   }
-}
-export default Virstata_contacts
+
+export default VirstataContacts

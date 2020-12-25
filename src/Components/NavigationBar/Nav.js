@@ -3,11 +3,13 @@ import Logo from './logo/logo'
 import Meniu from './meniu/meniu'
 import Links from './links/Links'
 
-const Nav = (props) => (
+
+const Nav = (props) => {
+  return (
   <div style={props.styles}>
     <Logo />
     <Meniu styles={props.stylesMeniu} />
     <Links />
-  </div>
-)
+  </div>)
+}
 export default Nav

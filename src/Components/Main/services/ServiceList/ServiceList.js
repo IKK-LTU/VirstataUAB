@@ -2,7 +2,8 @@ import React from 'react'
 
 import classes from './ServiceList.css'
 
-const ServicesList = (props) => (
+const ServicesList = (props) => {
+  return (
   <div className={classes.ServiceList}>
     <h4 style={{ marginBottom: '10px' }}>{props.headline}</h4>
 
@@ -24,5 +25,6 @@ const ServicesList = (props) => (
       </strong>
     </p>
   </div>
-)
+  )
+}
 export default ServicesList

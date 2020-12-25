@@ -65,14 +65,11 @@ function VirstataServices() {
     boxShadow: '0 4px 3px 0px rgb(20, 20, 20)',
   }
   const [setSelectedImg] = useState(null)
-  console.log(Services[0].imagess)
-  console.log(BetonavimasImg)
 
   const [active, setActive] = useState(0)
 
   function handleIdChange(e) {
     setActive(e.target.id)
-    console.log(e.target.id)
     return setActive(e.target.id)
   }
 
@@ -81,6 +78,7 @@ function VirstataServices() {
       <Nav stylesMeniu={navMeniuStyle} styles={navStyle} />
       <h2 style={{ textTransform: 'uppercase', textAlign: 'center' }}>Pasirinkite paslaugą</h2>
       <div className={classes.Filter}>
+        // eslint-disable-next-line no-shadow
         {Services.map((Services) => (
           <div
             className={classes.Filter_Item}
@@ -93,10 +91,10 @@ function VirstataServices() {
             {' '}
             {Services.title}{' '}
           </div>
-        ))}
+        )}
       </div>
 
-      <div className={classes.services}>
+      <div className={classes.servicees}>
         {/* {Services.id = 0 ? : Services.map((Services) =>
             < ImageGrid
             title={Services.title}
