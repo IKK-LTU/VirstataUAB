@@ -5,6 +5,7 @@ import classes from './Virstata.css'
 import Slider from './imgslider/Slider'
 import About from './about/About'
 import Services from './services/Services'
+// eslint-disable-next-line import/no-cycle
 import Nav from '../NavigationBar/Nav'
 import OurMission from './OurMission/OurMission'
 import Certificates from './certificates/certificates'
@@ -89,9 +90,8 @@ function Virstata(jump) {
       top: aboutSection.current.offsetTop - 140,
       behavior: 'smooth',
     })
-
   return (
-    <div>
+    <div key={CertificateImg.id}>
       <Nav jump={jump} stylesMeniu={navMeniuStyle} styles={navStyle} />{' '}
       {/* cia butu iskviesta funkcija => gotoAboutSection */}
       <Slider />

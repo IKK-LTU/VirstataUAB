@@ -8,7 +8,7 @@ import './Form.scss'
 function Form() {
   const { register, handleSubmit, errors } = useForm()
 
-  const onSubmit = (data) => {
+  const onSubmit = () => {
     console.log("submited")
   } // your form submit function which will invoke after successful validation
 
