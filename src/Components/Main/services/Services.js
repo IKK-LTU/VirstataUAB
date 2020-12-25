@@ -1,12 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 import Wall from '../../Img/siena.jpeg'
 import classes from './Services.css'
 import ServiceList from './ServiceList/ServiceList'
 
-class Services extends Component {
-  
-Service = [
+
+function Services() {
+const Service = [
   {
     headline: 'Betonavimo Darbai',
     Text:
@@ -39,9 +39,9 @@ Service = [
     Text: 'aaa',
     id: 5,
   },
-]
-  render() {
-    
+  ]
+  
+
     return (
       <div
         className={classes.Services}
@@ -52,13 +52,13 @@ Service = [
       >
         <h2> MŪSŲ ATLIEKAMI DARBAI</h2>
         <div className={classes.ServiceList}>
-          {Service.map((Service, index) => (
-            <ServiceList key={Service.id} headline={Service.headline} text={Service.Text} />
+          {Service.map((Servicee) => (
+            <ServiceList key={Servicee.id} headline={Servicee.headline} text={Servicee.Text} />
           ))}
         </div>
       </div>
     )
-  }
+  
 }
 
 export default Services
