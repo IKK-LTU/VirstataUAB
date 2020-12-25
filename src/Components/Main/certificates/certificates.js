@@ -1,11 +1,12 @@
+
 import React from 'react'
 import classes from './certificates.css'
 
-const Certificate = (props) => {
-  
+function Certificate(CertificateSrc) {
   return (
     <motion className={classes.Certificates}>
-      <img alt="certificate" src={props.CertificateSrc} />
-    </motion>)
+      <img alt="certificate" src={CertificateSrc} />
+    </motion>
+  )
 }
 export default Certificate

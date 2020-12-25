@@ -10,20 +10,26 @@ import Title from './Title/Title'
 
 function Slider() {
   const sliderArr = [
-    { im: <motion.img src={i1} alt="img1" />, text: <Title /> },
+    { im: <motion.img src={i1} alt="img1" />, text: <Title />,
+      id: 1,
+    },
     {
       im: <motion.img src={i3} alt="img3" />,
       text: 'MISIJA - Kokybiškai, greitai ir profesionaliai teikti paslaugas savo klientams.',
+      id:2,
     },
     {
       im: <motion.img src={i2} alt="img2" />,
       text:
         'VIZIJA - Gerinti darbo sąlygas įmonės darbuotojams ir užtikrinti sėkmingą įmonės plėtrą.',
+        id:3,
     },
     {
       im: <motion.img src={i4} alt="img4" />,
       text: 'TIKSLAS - Nuolat tobulinti teikiamų paslaugų ir produkcijos kokybę.',
+      id:4,
     },
+  
   ]
 
   const [x, setX] = useState(0)
@@ -33,10 +39,9 @@ function Slider() {
   //   x <= 0 ? setX(0) : setX(x + 100);
   // };
 
-  const goRight = () => {
-    console.log(x)
+  const goRight = () => (
     x === -100 * (sliderArr.length - 1) ? setX(0) : setX(x - 100)
-  }
+  )
 
   setTimeout(() => {
     goRight()
@@ -44,8 +49,13 @@ function Slider() {
 
   return (
     <div className="Slider">
-      {sliderArr.map((item, index) => (
-        <div autoPlay key={index} className="Slide" style={{ transform: `translateX(${x}%)` }}>
+      {sliderArr.map((item) => (
+        <div
+          autoPlay
+          key={sliderArr.id}
+          className="Slide"
+          style={{ transform: `translateX(${x}%)` }}
+        >
           {item.im}
           <motion.h2 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             {item.text}

@@ -4,11 +4,11 @@ import Meniu from './meniu/meniu'
 import Links from './links/Links'
 
 
-const Nav = (props) => {
+const Nav = (styles, stylesMeniu) => {
   return (
-  <div style={props.styles}>
+  <div style={styles}>
     <Logo />
-    <Meniu styles={props.stylesMeniu} />
+    <Meniu styles={stylesMeniu} />
     <Links />
   </div>)
 }

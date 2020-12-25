@@ -2,29 +2,29 @@ import React from 'react'
 
 import classes from './ServiceList.css'
 
-const ServicesList = (props) => {
+const ServicesList = (headline, text) => {
   return (
-  <div className={classes.ServiceList}>
-    <h4 style={{ marginBottom: '10px' }}>{props.headline}</h4>
+    <div className={classes.ServiceList}>
+      <h4 style={{ marginBottom: '10px' }}>{headline}</h4>
 
-    <p>
-      {' '}
-      {props.text}
-      {/* <strong class="strong">DAUGIAU!</strong>
+      <p>
+        {' '}
+        {text}
+        {/* <strong class="strong">DAUGIAU!</strong>
                      <i class="ion-arrow-forward-circle-outline"></i> */}
-      ...
-      <strong
-        style={{
-          color: '#99db48',
-          textTransform: 'uppercase',
+        ...
+        <strong
+          style={{
+            color: '#99db48',
+            textTransform: 'uppercase',
 
-          letterSpacing: '0.5px',
-        }}
-      >
-        DAUGIAU!
-      </strong>
-    </p>
-  </div>
+            letterSpacing: '0.5px',
+          }}
+        >
+          DAUGIAU!
+        </strong>
+      </p>
+    </div>
   )
 }
 export default ServicesList

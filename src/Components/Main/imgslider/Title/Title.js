@@ -1,8 +1,7 @@
 import React from 'react'
-
 import classes from './Title.css'
 
-const Title = () => {
+function Title() {
   return (
     <div className={classes.Title}>
       <h1>
@@ -12,6 +11,5 @@ const Title = () => {
     </div>
   )
 }
-
 
 export default Title

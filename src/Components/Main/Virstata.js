@@ -13,13 +13,13 @@ import im1 from './certificates/Certificates_images/certificate_img.jpg'
 
 gsap.registerPlugin(ScrollTrigger)
 
-function Virstata(props) {
+function Virstata(jump) {
   const CertificateImg = [
-    { img: im1, delay: 2 },
-    { img: im1, delay: 2.5 },
-    { img: im1, delay: 3 },
-    { img: im1, delay: 3.5 },
-    { img: im1, delay: 4 },
+    { img: im1, delay: 2, id: 1 },
+    { img: im1, delay: 2.5, id: 2 },
+    { img: im1, delay: 3, id: 3 },
+    { img: im1, delay: 3.5, id: 4 },
+    { img: im1, delay: 4, id: 5 },
   ]
   const navMeniuStyle = {
     color: '#fff',
@@ -47,6 +47,7 @@ function Virstata(props) {
       delay: 1,
     })
 
+    // eslint-disable-next-line no-unused-vars
     revealRefs.current.forEach((el, index) => {
       gsap.fromTo(
         el,
@@ -91,11 +92,13 @@ function Virstata(props) {
 
   return (
     <div>
-      <Nav jump={props.jump} stylesMeniu={navMeniuStyle} styles={navStyle} />{' '}
+      <Nav jump={jump} stylesMeniu={navMeniuStyle} styles={navStyle} />{' '}
       {/* cia butu iskviesta funkcija => gotoAboutSection */}
       <Slider />
       <div ref={addToRefs}>
-        <button onClick={gotoAboutSection}>Click to scroll </button>{' '}
+        <button onClick={gotoAboutSection} type="button">
+          Click to scroll{' '}
+        </button>{' '}
         {/* per buttona tai veikia gotoAboutSection */}
         <OurMission id="aa" />
       </div>
@@ -108,8 +111,12 @@ function Virstata(props) {
       <div path="/details" ref={addToRefs} className={classes.Certificate}>
         <h2>Sertifikatai</h2>
         <div className={classes.Certificates}>
-          {CertificateImg.map((CertificateImg) => (
-            <Certificates delay={CertificateImg.delay} CertificateSrc={CertificateImg.img} />
+          {CertificateImg.map((CertificateImgg) => (
+            <Certificates
+              key={CertificateImgg.id}
+              delay={CertificateImgg.delay}
+              CertificateSrc={CertificateImgg.img}
+            />
           ))}
         </div>
       </div>
