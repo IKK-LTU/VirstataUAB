@@ -11,72 +11,61 @@ function Form() {
     alert(JSON.stringify(data))
   } // your form submit function which will invoke after successful validation
 
-  const Label = props => {
-    const {
-      htmlFor,
-      ...otherProps
-    } = props;
-    
-    console.log(watch('example')) // you can watch individual input by pass the name of the input
+  console.log(watch('example')) // you can watch individual input by pass the name of the input
 
-    return (
-      <div className="Formm">
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <h3>
-            Turite klausimų ar norite pasikonsultuoti? Skambinkite arba palikite žinutę žemiau ir mes
+  return (
+    <div className="Formm">
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <h3>
+          Turite klausimų ar norite pasikonsultuoti? Skambinkite arba palikite žinutę žemiau ir mes
           su Jumis susisieksime!{' '}
-          </h3>
-          <label htmlFor="vardas">Vardas</label>
-          <input
-            id="vardas"
-            type="text"
-            name="firstName"
-            placeholder="Jūsų vardas"
-            ref={register({
-              required: true,
-              maxLength: 20,
-              pattern: /^[A-Za-z]+$/i,
-            })}
-          />
-          {_.get('firstName.type', errors) === 'required' && <p>This field is required</p>}
-          {_.get('firstName.type', errors) === 'maxLength' && (
-            <p>First name cannot exceed 20 characters</p>
-          )}
-          {_.get('firstName.type', errors) === 'pattern' && <p>Alphabetical characters only</p>}
+        </h3>
+        <label>Vardas</label>
+        <input
+          name="firstName"
+          placeholder="Jūsų vardas"
+          ref={register({
+            required: true,
+            maxLength: 20,
+            pattern: /^[A-Za-z]+$/i,
+          })}
+        />
+        {_.get('firstName.type', errors) === 'required' && <p>This field is required</p>}
+        {_.get('firstName.type', errors) === 'maxLength' && (
+          <p>First name cannot exceed 20 characters</p>
+        )}
+        {_.get('firstName.type', errors) === 'pattern' && <p>Alphabetical characters only</p>}
 
-          <label htmlFor="mail">El. paštas</label>
-          <input
-            id="mail"
-            name="email"
-            placeholder="Jūsų elektroninis paštas"
-            required
-            ref={register({ pattern: /^[A-Za-z]+$/i })}
-          />
-          {_.get('email.type', errors) === 'pattern' && <p>Alphabetical characters only</p>}
+        <label>El. paštas</label>
+        <input
+          name="lastName"
+          placeholder="Jūsų elektroninis paštas"
+          required
+          ref={register({ pattern: /^[A-Za-z]+$/i })}
+        />
+        {_.get('lastName.type', errors) === 'pattern' && <p>Alphabetical characters only</p>}
 
-          <label htmlFor="number">Telefono numeris</label>
-          <input
-            id="number"
-            name="number"
-            placeholder="Jūsų telefono numeris"
-            required
-            ref={register({ pattern: /^[A-Za-z]+$/i })}
-          />
-          {_.get('number.type', errors) === 'pattern' && <p>Alphabetical characters only</p>}
+        <label>Telefono numeris</label>
+        <input
+          name="lastName"
+          placeholder="Jūsų telefono numeris"
+          required
+          ref={register({ pattern: /^[A-Za-z]+$/i })}
+        />
+        {_.get('lastName.type', errors) === 'pattern' && <p>Alphabetical characters only</p>}
 
-          <label htmlFor="body">Žinutė</label>
-          <textarea
-            id="body"
-            type="message"
-            name="Message"
-            placeholder=""
-            ref={register({ pattern: /^[A-Za-z]+$/i })}
-          />
-          {_.get('lastName.type', errors) === 'pattern' && <p>Alphabetical characters only</p>}
-          <input type="submit" />
-        </form>
-      </div>
-    )
-  }
+        <label>Žinutė</label>
+        <textarea
+          id="body"
+          type="message"
+          name="Message"
+          placeholder=""
+          ref={register({ pattern: /^[A-Za-z]+$/i })}
+        />
+        {_.get('lastName.type', errors) === 'pattern' && <p>Alphabetical characters only</p>}
+        <input type="submit" />
+      </form>
+    </div>
+  )
 }
 export default Form

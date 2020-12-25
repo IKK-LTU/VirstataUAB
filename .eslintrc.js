@@ -16,16 +16,6 @@ module.exports = {
   },
   rules: {
     'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
-    'jsx-a11y/label-has-for': [
-      2,
-      {
-        components: ['Label'],
-        required: {
-          every: ['nesting', 'id'],
-        },
-        allowChildren: false,
-      },
-    ],
     'import/no-extraneous-dependencies': [2, { devDependencies: ['**/test.jsx', '**/test.js'] }],
     semi: [2, 'never'],
     'import/extensions': [

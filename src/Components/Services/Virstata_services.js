@@ -15,7 +15,7 @@ import im3 from './servicesGallery/Images/terasa.jpg'
 import im4 from './servicesGallery/Images/trinkeles.jpg'
 import im5 from './servicesGallery/Images/tvora.jpg'
 
-function VirstataServices() {
+function Virstata_services() {
   const Services = [
     {
       id: 0,
@@ -81,14 +81,13 @@ function VirstataServices() {
       <Nav stylesMeniu={navMeniuStyle} styles={navStyle} />
       <h2 style={{ textTransform: 'uppercase', textAlign: 'center' }}>Pasirinkite paslaugą</h2>
       <div className={classes.Filter}>
-        {Services.map(() => (
+        {Services.map((Services) => (
           <div
             className={classes.Filter_Item}
             style={{
               backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(${Services.background})`,
             }}
             id={Services.id}
-            key={Services.id}
             onClick={handleIdChange}
           >
             {' '}
@@ -116,4 +115,16 @@ function VirstataServices() {
     </div>
   )
 }
-export default VirstataServices
+export default Virstata_services
+
+// const navMeniuStyle = {
+//   color: '#000'}
+// const navStyle = {
+//   display: 'flex',
+//   position: 'static',
+//   justifyContent: 'space-between',
+//   width: '100%',
+//   padding:    '10px 10px',
+//     color:'black',
+//     backgroundColor: 'rgba(0, 0, 0, 0.1)',
+// }

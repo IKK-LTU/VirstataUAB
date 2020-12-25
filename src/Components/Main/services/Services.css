@@ -1,4 +1,4 @@
-.Servicess {
+.Services {
   height: auto;
   color: #99db48;
   display: flex;
@@ -15,7 +15,7 @@
   align-items: start;
 }
 
-.Servicess h2 {
+.Services h2 {
   color: #60892fc2;
   font-size: 30px;
   margin: 0;

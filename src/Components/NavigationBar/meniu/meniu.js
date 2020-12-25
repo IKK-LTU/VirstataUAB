@@ -1,12 +1,7 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Virstata from '../../Main/Virstata'
 import classes from './meniu.css'
-
-PropTypes = {
-  styles: any
-}
 
 const Meniu = (props) => (
   <ul className={classes.meniu}>
@@ -24,9 +19,9 @@ const Meniu = (props) => (
     <Link onClick={() => <Virstata jump={gotoAboutSection()} />} to="/">
       <li>
         <span style={props.styles}>
-          {" "}
+          {' '}
           {/* kad cia paspaudus iskviest pas jo teva gotoAboutSection */}
-          Apie UAB Virstata
+          Apie UAB "Virstata"
         </span>
       </li>
     </Link>
