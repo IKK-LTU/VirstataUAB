@@ -8,11 +8,11 @@ import im1 from './certificates/Certificates_images/certificate_img.jpg'
 
 function VirstataAbout() {
   const CertificateImg = [
-    { img: im1, delay: 2 },
-    { img: im1, delay: 2.5 },
-    { img: im1, delay: 3 },
-    { img: im1, delay: 3.5 },
-    { img: im1, delay: 4 },
+    { img: im1, delay: 2, id:1 },
+    { img: im1, delay: 2.5, id:2 },
+    { img: im1, delay: 3, id:3 },
+    { img: im1, delay: 3.5, id:4 },
+    { img: im1, delay: 4, id:5 },
   ]
 
   const navMeniuStyle = { color: '#fff' }
@@ -34,8 +34,12 @@ function VirstataAbout() {
       <div className={classes.Certificate}>
         <h2>Sertifikatai</h2>
         <div className={classes.Certificates}>
-          {CertificateImg.map((CertificateImg) => (
-            <Certificate delay={CertificateImg.delay} CertificateSrc={CertificateImg.img} />
+          {CertificateImg.map((CertificateImgg) => (
+            <Certificate
+              key={CertificateImgg.id}
+              delay={CertificateImgg.delay}
+              CertificateSrc={CertificateImgg.img}
+            />
           ))}
         </div>
       </div>

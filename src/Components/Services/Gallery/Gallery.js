@@ -14,8 +14,8 @@ const images = [
 function Gallery() {
   return (
     <div className={classes.Gallery}>
-      {images.map((images) => (
-        <img alt="Images" key={images.id} src={images.src} />
+      {images.map((imagees) => (
+        <img alt="Images" key={imagees.id} src={imagees.src} />
       ))}
     </div>
   )

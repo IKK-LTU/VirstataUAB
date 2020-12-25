@@ -6,13 +6,13 @@ import { useForm } from 'react-hook-form'
 import './Form.scss'
 
 function Form() {
-  const { register, handleSubmit, watch, errors } = useForm()
+  const { register, handleSubmit, errors } = useForm()
 
   const onSubmit = (data) => {
-    alert(JSON.stringify(data))
+    console.log("submited")
   } // your form submit function which will invoke after successful validation
 
-  console.log(watch('example')) // you can watch individual input by pass the name of the input
+  // console.log(watch('example')) // you can watch individual input by pass the name of the input
 
   return (
     <div className="Formm">

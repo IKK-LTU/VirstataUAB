@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import classes from './Modal.css'
 
-const Modal = ({ selectedImg, setSelectedImg }) => {
+const Modal = (selectedImg, setSelectedImg) => {
   const handleClick = (e) => {
     if (e.target.classList.contains(classes.backdrop)) {
       setSelectedImg(null)
