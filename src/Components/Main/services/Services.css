@@ -1,4 +1,4 @@
-.Services {
+.ServicesStyle {
   height: auto;
   color: #99db48;
   display: flex;
@@ -6,7 +6,7 @@
   justify-content: space-around;
   align-items: center;
 }
-.ServiceList {
+.SserviceList {
   opacity: 1;
   width: 100%;
   display: flex;
@@ -15,7 +15,7 @@
   align-items: start;
 }
 
-.Services h2 {
+.ServicesStyle h2 {
   color: #60892fc2;
   font-size: 30px;
   margin: 0;
