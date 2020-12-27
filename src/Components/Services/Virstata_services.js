@@ -47,7 +47,7 @@ function VirstataServices() {
       background: im4,
     },
     {
-      id: 3,
+      id: 4,
       imagess: TvorosVartaiImg,
       title: 'Tvoros ir Vartai',
       description: 'dd',
@@ -73,13 +73,12 @@ function VirstataServices() {
     return setActive(e.target.id)
   }
 
-    
+  
     return (
       <div style={{ margin: 0 }}>
-        <Nav style={{ display: 'fix'}} />
+        <Nav style={{ display: 'fix' }} />
         <h2 style={{ textTransform: 'uppercase', textAlign: 'center' }}>Pasirinkite paslaugą</h2>
         <div className={classes.Filter}>
-          {/* // eslint-disable-next-line no-shadow */}
           {Services.map((Servicees) => (
             <div
               className={classes.Filter_Item}
@@ -92,11 +91,12 @@ function VirstataServices() {
               onKeyDown={handleIdChange}
               tabIndex={0}
             >
-              {' '}
-              {Servicees.title}{' '}
+              
+              {Servicees.title}
             </div>
           ))}
         </div>
+        console.log({Services[active].title});
         <div className={classes.servicees}>
           <ImageGrid
             title={Services[active].title}
