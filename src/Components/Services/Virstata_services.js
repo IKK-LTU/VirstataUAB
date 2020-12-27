@@ -54,16 +54,16 @@ function VirstataServices() {
       background: im5,
     },
   ]
-  const navMeniuStyle = { color: '#fff' }
-  const navStyle = {
-    display: 'flex',
-    justifyContent: 'space-between',
-    width: '100%',
-    padding: '10px 10px',
-    backgroundColor: 'rgba(65, 63, 63, 0.356)',
-    zIndex: '1',
-    boxShadow: '0 4px 3px 0px rgb(20, 20, 20)',
-  }
+  // const navMeniuStyle = { color: '#fff' }
+  // const navStyle = {
+  //   display: 'flex',
+  //   justifyContent: 'space-between',
+  //   width: '100%',
+  //   padding: '10px 10px',
+  //   backgroundColor: 'rgba(65, 63, 63, 0.356)',
+  //   zIndex: '1',
+  //   boxShadow: '0 4px 3px 0px rgb(20, 20, 20)',
+  // }
   const [setSelectedImg] = useState(null)
 
   const [active, setActive] = useState(0)
@@ -76,7 +76,7 @@ function VirstataServices() {
     
     return (
       <div style={{ margin: 0 }}>
-        <Nav stylesMeniu={navMeniuStyle} styles={navStyle} />
+        <Nav style={{ display: 'fix'}} />
         <h2 style={{ textTransform: 'uppercase', textAlign: 'center' }}>Pasirinkite paslaugą</h2>
         <div className={classes.Filter}>
           {/* // eslint-disable-next-line no-shadow */}
@@ -97,16 +97,7 @@ function VirstataServices() {
             </div>
           ))}
         </div>
-
         <div className={classes.servicees}>
-          {/* {Services.id = 0 ? : Services.map((Services) =>
-            < ImageGrid
-            title={Services.title}
-            description={Services.description}
-            items={Services.imagess}
-            setSelectedImg={setSelectedImg} />
-          ) } */}
-
           <ImageGrid
             title={Services[active].title}
             description={Services[active].description}

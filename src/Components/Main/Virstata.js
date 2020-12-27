@@ -22,19 +22,7 @@ function Virstata(jump) {
     { img: im1, delay: 3.5, id: 4 },
     { img: im1, delay: 4, id: 5 },
   ]
-  const navMeniuStyle = {
-    color: '#fff',
-  }
-  const navStyle = {
-    display: 'flex',
-    position: 'fixed',
-    justifyContent: 'space-between',
-    width: '100%',
-    padding: '10px 10px',
-    backgroundColor: 'rgba(65, 63, 63, 0.356)',
-    zIndex: '1',
-    boxShadow: '0 4px 3px 0px rgb(20, 20, 20)',
-  }
+
 
   const headerRef = useRef(null)
 
@@ -92,8 +80,7 @@ function Virstata(jump) {
     })
   return (
     <div key={CertificateImg.id}>
-      <Nav jump={jump} stylesMeniu={navMeniuStyle} styles={navStyle} />{' '}
-      {/* cia butu iskviesta funkcija => gotoAboutSection */}
+      <Nav styles={{position:'fixed'}} jump={jump} />
       <Slider />
       <div ref={addToRefs}>
         <button onClick={gotoAboutSection} type="button">

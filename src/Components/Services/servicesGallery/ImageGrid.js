@@ -1,9 +1,10 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import ImageGallery from 'react-image-gallery'
 import './styles/image-gallery.scss'
 import classes from './ImageGrid.css'
 
-const ImageGrid = (title, description, items) => (
+const ImageGrid = ({title, description, items}) => (
   <div className={classes.ImageGrid}>
     <div className={classes.ImageGrid_Gallery}>
       <h2> {title}</h2>
@@ -20,6 +21,11 @@ const ImageGrid = (title, description, items) => (
     </div>
   </div>
 )
+ImageGrid.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  items: PropTypes.string.isRequired,
+}
 export default ImageGrid
 
 // {/* <Carousel itemsToShow={2}>

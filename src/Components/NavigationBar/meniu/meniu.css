@@ -2,9 +2,10 @@
   width: 65%;
   margin-top: 4%;
   list-style: none;
+  color:#fff;
 }
 .meniu span {
-  color: rgb(0, 0, 0);
+  color:#fff;
   text-decoration: none;
 }
 .meniu li {
