@@ -4,10 +4,10 @@ import ImageGallery from 'react-image-gallery'
 import './styles/image-gallery.scss'
 import classes from './ImageGrid.css'
 
-const ImageGrid = ({title, description, items}) => (
+const ImageGrid = ({titlee, description, items}) => (
   <div className={classes.ImageGrid}>
     <div className={classes.ImageGrid_Gallery}>
-      <h2> {title}</h2>
+      <h2> {titlee}</h2>
       <p>{description}</p>
     </div>
     <div className="abcd">
@@ -22,7 +22,7 @@ const ImageGrid = ({title, description, items}) => (
   </div>
 )
 ImageGrid.propTypes = {
-  title: PropTypes.string.isRequired,
+  titlee: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   items: PropTypes.string.isRequired,
 }

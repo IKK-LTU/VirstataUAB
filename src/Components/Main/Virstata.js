@@ -77,6 +77,7 @@ function Virstata(jump) {
       top: aboutSection.current.offsetTop - 140,
       behavior: 'smooth',
     })
+  
   return (
     <div key={CertificateImg.id}>
       <Nav styles={{position:'fixed'}} jump={jump} />

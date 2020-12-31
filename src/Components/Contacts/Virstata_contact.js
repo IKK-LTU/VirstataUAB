@@ -1,26 +1,24 @@
 import React from 'react'
 import Nav from '../NavigationBar/Nav'
-import ContactImage from './contact_us_image/Contact_image'
-import Form from './Form/Form'
 import ContactsDetails from './contact-us-details/contact-us-details'
+import Form from './Form/Form'
 
 function VirstataContacts() {
-    const navMeniuStyle = { color: '#fff' }
+    const navMeniuStyle = { color: 'rgb(0, 0, 0)' }
     const navStyle = {
       display: 'flex',
-      position: 'fixed',
       justifyContent: 'space-between',
       width: '100%',
       padding: '10px 10px',
-      backgroundColor: 'rgba(65, 63, 63, 0.356)',
+      backgroundColor: 'rgba(65, 63, 63, 0.56)',
       zIndex: '1',
-      boxShadow: '0 4px 3px 0px rgb(20, 20, 20)',
+      boxShadow: '0 4px 3px 0px #fff',
+      color: 'rgb(0, 0, 0)',
     }
 
     return (
       <div>
         <Nav stylesMeniu={navMeniuStyle} styles={navStyle} />
-        <ContactImage />
         <ContactsDetails />
         <Form />
       </div>
