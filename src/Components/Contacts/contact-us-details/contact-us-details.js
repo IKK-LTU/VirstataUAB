@@ -1,12 +1,11 @@
 import React from 'react'
 import { BiEnvelope } from 'react-icons/bi'
-import { FcPhone, FcContacts, FcBusinessman } from 'react-icons/fc'
+import { FcPhone, FcContacts } from 'react-icons/fc'
 import { HiOfficeBuilding } from 'react-icons/hi'
 import { motion } from 'framer-motion'
 import classes from './contact-us-details.css'
 import VKimg from './VK.jpg'
 import img1 from './contactImg.jpg'
-
 
 const ContactsDetails = () => (
   <div
@@ -31,11 +30,14 @@ const ContactsDetails = () => (
       />
       <h3 style={{ textAlign: 'center' }}>
         {' '}
-        <FcBusinessman className={classes.icons} />
         <br /> Direktorius <br /> Virginijus Kunickas
       </h3>
       <p>
-        aagregertgrtgegerfgdgregegegrergerffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+        Sveiki, <br /> <br />
+        Esu UAB Virstata įmonės Direktorius nuo jos įkūrimo (2016 metų). Tačiau šioje srityje darbo
+        patirties turiu daugiau nei 20 metų. Esu įgyjęs statybų inžinerijos aukštąjį išsilavinimą ir
+        baigęs statybų projektų valdymo kvalifikacijos kėlimo kursus. Didelė patirtis ir mokantis
+        įgytos žinios man leidžia garantuoti Jums sėkmingai ir profesionaliai atliktus projektus.
       </p>
     </motion.div>
 
