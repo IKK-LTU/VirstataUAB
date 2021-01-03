@@ -48,7 +48,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  
+
 }
 
 @media only screen and (min-width: 600px) {
@@ -106,6 +106,16 @@
     width: 350px;
     height: 400px;
   }
+  
+  .ServiceListt h4 {
+  font-size: 20px;
+}
+.ServiceListt p {
+  line-height: 140%;
+  font-weight: 500;
+  font-size: 15px;
+  width: 80%;
+}
 }
 
 
