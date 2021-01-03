@@ -1,15 +1,14 @@
 .servicees {
   display: inline-block;
-  margin: 3% 5% 0 5%;
   /* background-color: rgb(185, 185, 185); */
-  width: 90%;
-  height: 95vh;
+  width: 100%;
+  height: 85vh;
 }
 
 .Filter {
   width: 100%;
   margin: 0;
-  height: 50vh;
+  height: 60vh;
   display: flex;
   justify-content: space-around;
   padding: 1% 0 5% 0;
@@ -46,4 +45,79 @@
     rgba(0, 0, 0, 0.2),
     rgba(0, 0, 0, 0.2)
   );
+}
+
+@media only screen and (max-width: 600px) {
+  .servicees {
+  display:block;
+  height: 100vh;
+}
+.Filter {
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  justify-content:space-around;
+  padding:0;
+}
+.Filter_Item {
+  display: flex;
+  flex-direction: column;
+  height: 13vh;
+  justify-content:center;
+  width:100%;
+  margin:0 0 0 2%;
+}
+}
+
+@media only screen and (min-width: 600px) {
+  .servicees {
+  height: 100%;
+}
+.Filter {
+  height: 25vh;
+}
+}
+
+@media only screen and (min-width: 768px) {
+  .servicees {
+  height: 45vh;
+}
+.Filter {
+  height: 30vh;
+}
+}
+@media only screen and (min-width: 992px) {
+  .servicees {
+  height: 45vh;
+}
+.Filter {
+  height: 30vh;
+}
+}
+@media only screen and (min-width: 1200px) {
+  .servicees {
+  height: 55vh;
+}
+.Filter {
+  height: 40vh;
+}
+}
+
+@media only screen and (min-width: 1400px) {
+  .servicees {
+  display: inline-block;
+  /* background-color: rgb(185, 185, 185); */
+  width: 100%;
+  height: 85vh;
+}
+
+.Filter {
+  width: 100%;
+  margin: 0;
+  height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  padding: 1% 0 5% 0;
+  text-decoration: uppercase;
+}
 }

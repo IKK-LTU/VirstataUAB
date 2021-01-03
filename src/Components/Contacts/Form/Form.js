@@ -12,8 +12,7 @@ function Form() {
     e.preventDefault()
 
     emailjs
-      .sendForm('service_i56l5lq', 'template_5mauo37', e.target, 'user_hTHl7tc7bLu21Hsal4Ih8')
-      .then(
+      .sendForm('service_i56l5lq', 'template_5mauo37', e.target, 'user_hTHl7tc7bLu21Hsal4Ih8').then(
         (result) => {
           console.log(result.text)
         },
@@ -22,10 +21,7 @@ function Form() {
         },
         e.target.reset(),
       )
-  } // your form submit function which will invoke after successful validation
-
-  // console.log(watch('example')) // you can watch individual input by pass the name of the input
-
+  }
   return (
     <div className="Formm">
       <form onSubmit={sendEmail}>

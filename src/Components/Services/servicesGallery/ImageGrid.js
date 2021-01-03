@@ -7,7 +7,7 @@ import classes from './ImageGrid.css'
 const ImageGrid = ({ titlee, description, items }) => (
   <div className={classes.ImageGrid}>
     <div className={classes.ImageGrid_Gallery}>
-      <h2> {titlee}</h2>
+      <h2>{titlee}</h2>
       <p>{description}</p>
     </div>
     <div className="abcd">

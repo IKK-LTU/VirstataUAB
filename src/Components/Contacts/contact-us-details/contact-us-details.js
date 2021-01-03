@@ -4,7 +4,7 @@ import { FcPhone, FcContacts } from 'react-icons/fc'
 import { HiOfficeBuilding } from 'react-icons/hi'
 import { motion } from 'framer-motion'
 import classes from './contact-us-details.css'
-import VKimg from './VK.jpg'
+import VKimg from './VKK.JPG'
 import img1 from './contactImg.jpg'
 
 const ContactsDetails = () => (

@@ -5,9 +5,9 @@ import classes from './certificates.css'
 
 function Certificate({CertificateSrc}) {
   return (
-    <motion className={classes.Certificates}>
+    <div className={classes.Certificates}>
       <img alt="certificate" src={CertificateSrc} />
-    </motion>
+    </div>
   )
 }
 Certificate.propTypes = {

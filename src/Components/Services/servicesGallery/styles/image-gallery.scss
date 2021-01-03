@@ -15,18 +15,27 @@ $ig-transparent: rgba(0, 0, 0, 0) !default;
 // SVG ICON STYLES
 .abcd {
   display: inline-block;
-  width: 40%;
-  height: 90%;
   border-radius: 5px;
-  margin: 5% 0% 3% 7%;
   -webkit-filter: drop-shadow(8px 8px 10px gray);
   filter: drop-shadow(8px 8px 10px gray);
-
+  margin: auto;
+  width: 35%;
   // margin: 5% 4% 5% 5%;
   justify-content: center;
+
+  @media (max-width: $ig-small-screen) {
+  
+      width:  80%;
+      height: 40%;
+      margin: auto;
+    
+  }
+  
+
+  
   .image-gallery-icon {
     color: $ig-white;
-
+    
     transition: all 0.2s ease-out;
     appearance: none;
     background-color: transparent;
@@ -143,6 +152,9 @@ $ig-transparent: rgba(0, 0, 0, 0) !default;
     @include vendor-prefix('user-select', none);
     -webkit-tap-highlight-color: $ig-transparent;
     position: relative;
+    justify-content: center;
+    vertical-align: middle;
+    justify-self: center;
 
     &.fullscreen-modal {
       background: $ig-black;
@@ -430,4 +442,5 @@ $ig-transparent: rgba(0, 0, 0, 0) !default;
       padding: 5px 10px;
     }
   }
+  
 }

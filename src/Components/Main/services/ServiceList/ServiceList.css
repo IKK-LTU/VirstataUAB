@@ -45,5 +45,67 @@
   display: flex;
   flex-direction: column;
   justify-items: baseline;
+}
+
+@media only screen and (max-width: 600px) {
   
 }
+
+@media only screen and (min-width: 600px) {
+ .ServiceListt {
+    width: 250px;
+    height: 300px;
+  }
+.ServiceListt p {
+  line-height: 140%;
+  font-weight: 400;
+  font-size: 12px;
+  width: 80%;
+}
+}
+@media only screen and (min-width: 768px) {
+  .ServiceListt {
+    width: 250px;
+    height: 300px;
+  }
+  .ServiceListt h4 {
+  font-size: 15px;
+}
+.ServiceListt p {
+  line-height: 140%;
+  font-weight: 400;
+  font-size: 13px;
+  width: 80%;
+}
+}
+
+ @media only screen and (min-width: 992px) {
+    .ServiceListt {
+    width: 200px;
+    height: 300px;
+  }
+  .ServiceListt h4 {
+  font-size: 15px;
+}
+.ServiceListt p {
+  line-height: 140%;
+  font-weight: 400;
+  font-size: 13px;
+  width: 80%;
+}
+}
+
+@media only screen and (min-width: 1200px) {
+  .ServiceListt {
+    width: 220px;
+    height: 350px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .ServiceListt {
+    width: 350px;
+    height: 400px;
+  }
+}
+
+

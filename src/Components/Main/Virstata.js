@@ -73,6 +73,7 @@ function Virstata() {
   //   };
 
   const aboutSection = useRef(null)
+  
   const gotoAboutSection = () =>
     window.scrollTo({
       top: aboutSection.current.offsetTop - 140,

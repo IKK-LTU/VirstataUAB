@@ -1,26 +1,29 @@
 .About {
   background-color: rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid #61892f;
-  height: auto;
+  vertical-align: middle;
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
-  flex-wrap: wrap;
   justify-content: space-around;
-  padding: 3%;
+  padding: 10% 0;
+  
 }
-.About_box {
-  height: 100%;
-  width: 90vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  justify-items: center;
+.Text {
+  margin: auto;
+  width: 50%;
 }
-.About img {
-  height: 400px;
-  width: 500px;
+.Text_Icon {
+  border-radius: 50%;
   border: 1px solid rgb(153, 219, 72);
-  border-radius: 10px;
-  box-shadow: 0 8px 6px -6px black;
-  justify-items: center;
+  height: 100px;
+  width: 100px;
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+}
+.Text p,
+.Text h3 {
+  width: 100%;
+  
 }
