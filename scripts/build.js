@@ -24,7 +24,6 @@ const printBuildError = require('react-dev-utils/printBuildError')
 
 const { measureFileSizesBeforeBuild } = FileSizeReporter
 const { printFileSizesAfterBuild } = FileSizeReporter
-const useYarn = fs.existsSync(paths.yarnLockFile)
 
 // These sizes are pretty large. We'll warn for bundles exceeding them.
 const WARN_AFTER_BUNDLE_GZIP_SIZE = 512 * 1024
@@ -32,19 +31,21 @@ const WARN_AFTER_CHUNK_GZIP_SIZE = 1024 * 1024
 
 const isInteractive = process.stdout.isTTY
 
-// Warn and crash if required files are missing
-if (!checkRequiredFiles([paths.appHtml, paths.appIndexJs])) {
-  process.exit(1)
-}
 
-// Generate configuration
-const config = configFactory('production')
 
 // We require that you explicitly set browsers and do not fall back to
 // browserslist defaults.
 const { checkBrowsers } = require('react-dev-utils/browsersHelper')
 const paths = require('../config/paths')
+
 const configFactory = require('../config/webpack.config')
+// Generate configuration
+const config = configFactory('production')
+const useYarn = fs.existsSync(paths.yarnLockFile)
+// Warn and crash if required files are missing
+if (!checkRequiredFiles([paths.appHtml, paths.appIndexJs])) {
+  process.exit(1)
+}
 
 checkBrowsers(paths.appPath, isInteractive)
   .then(() =>

@@ -34,7 +34,7 @@ function VirstataAbout() {
       <div className={classes.Certificate}>
         <h2>Sertifikatai</h2>
         <div className={classes.Certificates}>
-          {CertificateImg.map((CertificateImgg) => (
+          {CertificateImg.map(CertificateImgg => (
             <Certificate
               key={CertificateImgg.id}
               delay={CertificateImgg.delay}

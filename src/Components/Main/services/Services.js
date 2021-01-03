@@ -20,7 +20,7 @@ function Services() {
           text="Pamatai gali būti gręžtiniai, juostiniai, stulpiniai, priklausomai nuo statomo pastato, būsimųjo apkrovų, grunto ypatybių. Kokie pamatai bus įrengiami, numatoma pastato projekte atlikus grunto tyrimus"
         />
         <ServiceList
-          headline="TVOROS IR TERASOS"
+          headline="APDAILOS DARBAI"
           text="Pamatai gali būti gręžtiniai, juostiniai, stulpiniai,priklausomai nuo statomo pastato, būsimųjo apkrovų, grunto ypatybių..."
         />
         <ServiceList
@@ -32,7 +32,7 @@ function Services() {
           text="Pamatai gali būti gręžtiniai, juostiniai, stulpiniai, priklausomai nuo statomo pastato..."
         />
         <ServiceList
-          headline="APDAILOS DARBAI"
+          headline="TVOROS IR VARTAI"
           text="Pamatai gali būti gręžtiniai, juostiniai, stulpiniai, priklausomai nuo statomo pastato..."
         />
       </div>

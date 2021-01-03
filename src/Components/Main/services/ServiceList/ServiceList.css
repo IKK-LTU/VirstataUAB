@@ -8,6 +8,7 @@
   height: 400px;
   flex-wrap: wrap;
   margin: 5% 0;
+  cursor: pointer;
 }
 .ServiceListt:hover {
   opacity: 1;
@@ -44,4 +45,5 @@
   display: flex;
   flex-direction: column;
   justify-items: baseline;
+  
 }

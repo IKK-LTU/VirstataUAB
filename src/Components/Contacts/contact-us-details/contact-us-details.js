@@ -43,7 +43,7 @@ const ContactsDetails = () => (
 
     <motion.div className={classes.contactUs_info} initial={{ x: -1000 }} animate={{ x: 20 }}>
       <p style={{ textAlign: 'center', fontSize: '150%' }}>
-        <b>UAB VIRSTATA</b>
+        <b>Rekvizitai</b>
       </p>
       <p>
         <FcContacts className={classes.icons} />

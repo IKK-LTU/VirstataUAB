@@ -25,6 +25,39 @@
     <title>VIRSTATA</title>
   </head>
   <body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDBsz-3rLHGM7bFaxovpsDC84_nwqf73fw",
+    authDomain: "virstata-5463b.firebaseapp.com",
+    projectId: "virstata-5463b",
+    storageBucket: "virstata-5463b.appspot.com",
+    messagingSenderId: "628280982841",
+    appId: "1:628280982841:web:4bc6107f4390736edc3ce8",
+    measurementId: "G-QCLL0F5JN9"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      ;(function () {
+        emailjs.init('user_hTHl7tc7bLu21Hsal4Ih8')
+      })()
+    </script>
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--

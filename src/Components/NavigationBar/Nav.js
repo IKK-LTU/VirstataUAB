@@ -5,17 +5,17 @@ import Meniu from './meniu/meniu'
 import Links from './links/Links'
 import classes from './Nav.css'
 
-
-const Nav = ({ styles }) => {
+const Nav = ({ styles, jump }) => {
   return (
     <div style={styles} className={classes.Nav}>
       <Logo />
-      <Meniu />
+      <Meniu jump={jump} />
       <Links />
     </div>
   )
 }
 Nav.propTypes = {
   styles: PropTypes.string.isRequired,
+  jump: PropTypes.string.isRequired,
 }
 export default Nav

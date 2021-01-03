@@ -13,7 +13,7 @@ import im1 from './certificates/Certificates_images/certificate_img.jpg'
 
 gsap.registerPlugin(ScrollTrigger)
 
-function Virstata(jump) {
+function Virstata() {
   const CertificateImg = [
     { img: im1, delay: 2, id: 1 },
     { img: im1, delay: 2.5, id: 2 },
@@ -46,6 +46,7 @@ function Virstata(jump) {
           duration: 1,
           autoAlpha: 1,
           ease: 'none',
+          
           scrollTrigger: {
             id: 'aa',
             trigger: el,
@@ -76,17 +77,14 @@ function Virstata(jump) {
     window.scrollTo({
       top: aboutSection.current.offsetTop - 140,
       behavior: 'smooth',
+      delay: 1 ,
     })
   
   return (
     <div key={CertificateImg.id}>
-      <Nav styles={{position:'fixed'}} jump={jump} />
+      <Nav styles={{ position: 'fixed' }} jump={gotoAboutSection} />
       <Slider />
       <div ref={addToRefs}>
-        <button onClick={gotoAboutSection} type="button">
-          Click to scroll{' '}
-        </button>{' '}
-        {/* per buttona tai veikia gotoAboutSection */}
         <OurMission id="aa" />
       </div>
       <div ref={addToRefs}>

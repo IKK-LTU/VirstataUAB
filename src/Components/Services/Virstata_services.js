@@ -30,7 +30,7 @@ function VirstataServices() {
     {
       id: '1',
       imagess: IvairusApdailosDarbai,
-      title: 'Ivairūs Apdailos Darbai',
+      title: 'Apdailos Darbai',
       description: 'bb',
       background: im2,
     },
@@ -56,24 +56,9 @@ function VirstataServices() {
       background: im5,
     },
   ]
-  // const navMeniuStyle = { color: '#fff' }
-  // const navStyle = {
-  //   display: 'flex',
-  //   justifyContent: 'space-between',
-  //   width: '100%',
-  //   padding: '10px 10px',
-  //   backgroundColor: 'rgba(65, 63, 63, 0.356)',
-  //   zIndex: '1',
-  //   boxShadow: '0 4px 3px 0px rgb(20, 20, 20)',
-  // }
   const [setSelectedImg] = useState(null)
 
   const [ active, setActive ] = useState(0)
-
-  // function handleIdChange(e) {
-  //   setActive(e.target.id)
-  //   return setActive(e.target.id)
-  // }
 const headerRef = useRef(null)
 
 const revealRefs = useRef([])
@@ -113,22 +98,7 @@ const addToRefs = (el) => {
     revealRefs.current.push(el)
   }
 }
-
-//  const scrollToSection = () => {
-//     scroller.scrollTo("#about", {
-//       duration: 800,
-//       delay: 0,
-//       smooth: "easeInOutQuart",
-//     });
-//   };
-
   const aboutSection = useRef(null)
-  
-// const gotoAboutSection = () => 
-//   window.scrollTo({
-//     top: aboutSection.current.offsetTop - 14,
-//     behavior: 'smooth',
-//   })
   function handleIdChange(e) {
       window.scrollTo({
         top: aboutSection.current.offsetTop - 40,

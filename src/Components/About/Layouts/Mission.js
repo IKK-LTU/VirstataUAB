@@ -1,8 +1,9 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { motion } from 'framer-motion'
 import classes from './Mission.css'
 
-const Mission = (title, subtitle) => (
+const Mission = ({title, subtitle}) => (
   <motion.div className={classes.Mission} initial={{ x: -2000 }} animate={{ x: 0 }}>
     <motion.div
       className={classes.Mission_Text}
@@ -19,4 +20,8 @@ const Mission = (title, subtitle) => (
     </motion.div>
   </motion.div>
 )
+Mission.propTypes = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
+}
 export default Mission
