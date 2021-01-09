@@ -2,12 +2,23 @@
   background: rgba(0, 0, 0, 0.1);
   height: auto;
   padding: 3% 0;
+    
+  
   form {
     max-width: 500px;
     margin: 0 auto;
+    @media only screen and (max-width: 692px) {
+        margin:0 5%;
+
+  }
   }
   h3 {
     margin-top: 0;
+    @media only screen and (max-width: 692px) {
+        font-size:80%;
+        margin:0 5%;
+
+  }
   }
   h1 {
     font-weight: 100;

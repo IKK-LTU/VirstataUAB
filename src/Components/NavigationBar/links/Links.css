@@ -1,13 +1,23 @@
 .links {
-  display: inline-block;
-  margin-right: 25px;
+  display: flex;
+  padding:0;
+  justify-content:space-around;
+  margin: 2%;
+}
+.links ul {
+  height: 100%;
+  width:100%;
 }
 .links li {
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  margin: 0px 0px 0 0px;
+  margin: 0;
+  height: 100%;
+  list-style: none;
 }
+.links a {
+  margin: 0;
+  height: 100%;
+}
+
 .links li:hover {
   font-size: 150%;
 }
@@ -16,8 +26,6 @@
 .linkstwitter,
 .linksinstagram {
   transition: color 0.2s;
-  display: inline-block;
-  margin-right: 15px;
   font-size: 150%;
 }
 .linksfacebook,
@@ -32,4 +40,10 @@
 .linksinstagram a:hover {
   color: #e95950;
   border-radius: 13px;
+}
+
+@media only screen and (max-width: 800px) {
+  .links {
+  display: none;
+}
 }

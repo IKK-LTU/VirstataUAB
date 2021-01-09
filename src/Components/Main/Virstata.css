@@ -10,3 +10,11 @@
   text-transform: uppercase;
   text-align: center;
 }
+.fixed {
+  position: fixed;
+}
+@media only screen and (max-width: 1100px) {
+  .Certificate {
+  display: none;
+}
+}

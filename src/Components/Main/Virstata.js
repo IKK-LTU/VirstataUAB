@@ -1,8 +1,6 @@
-import React, { Component, useRef, useEffect } from 'react'
-import { Route, useRouteMatch, useParams } from 'react-router-dom'
+import React, { useRef, useEffect, useState  } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import ScrollToPlugin from 'gsap/ScrollToPlugin'
 import classes from './Virstata.css'
 import Slider from './imgslider/Slider'
 import About from './about/About'
@@ -10,32 +8,25 @@ import Services from './services/Services'
 import Nav from '../NavigationBar/Nav'
 import OurMission from './OurMission/OurMission'
 import Certificates from './certificates/certificates'
+import SideDrawer from '../NavigationBar/mobile/SideDrawer'
+import BackDrop from '../NavigationBar/mobile/Backdrop/BackDrop'
 
 import im1 from './certificates/Certificates_images/certificate_img.jpg'
 
 gsap.registerPlugin(ScrollTrigger)
 
-function Virstata(props) {
+function Virstata() {
+
+   
+
   const CertificateImg = [
-    { img: im1, delay: 2 },
-    { img: im1, delay: 2.5 },
-    { img: im1, delay: 3 },
-    { img: im1, delay: 3.5 },
-    { img: im1, delay: 4 },
+    { img: im1, delay: 2, id: 1 },
+    { img: im1, delay: 2.5, id: 2 },
+    { img: im1, delay: 3, id: 3 },
+    { img: im1, delay: 3.5, id: 4 },
+    { img: im1, delay: 4, id: 5 },
   ]
-  const navMeniuStyle = {
-    color: '#fff',
-  }
-  const navStyle = {
-    display: 'flex',
-    position: 'fixed',
-    justifyContent: 'space-between',
-    width: '100%',
-    padding: '10px 10px',
-    backgroundColor: 'rgba(65, 63, 63, 0.356)',
-    zIndex: '1',
-    boxShadow: '0 4px 3px 0px rgb(20, 20, 20)',
-  }
+
 
   const headerRef = useRef(null)
 
@@ -49,6 +40,7 @@ function Virstata(props) {
       delay: 1,
     })
 
+    // eslint-disable-next-line no-unused-vars
     revealRefs.current.forEach((el, index) => {
       gsap.fromTo(
         el,
@@ -59,6 +51,7 @@ function Virstata(props) {
           duration: 1,
           autoAlpha: 1,
           ease: 'none',
+          
           scrollTrigger: {
             id: 'aa',
             trigger: el,
@@ -74,31 +67,37 @@ function Virstata(props) {
     if (el && !revealRefs.current.includes(el)) {
       revealRefs.current.push(el)
     }
-  }
+  } 
 
-  //  const scrollToSection = () => {
-  //     scroller.scrollTo("#about", {
-  //       duration: 800,
-  //       delay: 0,
-  //       smooth: "easeInOutQuart",
-  //     });
-  //   };
+  // MObile Meniu Listener
 
+  const [sideDrawerClose, sideDrawerOpen] = useState(false)
+ const mobileMenu = () => sideDrawerOpen(!sideDrawerClose)
+
+  
   const aboutSection = useRef(null)
+  
   const gotoAboutSection = () =>
     window.scrollTo({
-      top: aboutSection.current.offsetTop - 140,
+      top: aboutSection.current.offsetTop - 10,
       behavior: 'smooth',
+      delay: 1 ,
     })
-
+  
   return (
-    <div>
-      <Nav jump={props.jump} stylesMeniu={navMeniuStyle} styles={navStyle} />{' '}
-      {/* cia butu iskviesta funkcija => gotoAboutSection */}
+    <div key={CertificateImg.id}>
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+      <link rel="manifest" href="/site.webmanifest" />
+      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+      <meta name="msapplication-TileColor" content="#da532c" />
+      <meta name="theme-color" content="#544c4c" />
+      {sideDrawerClose && <SideDrawer clicked={() => sideDrawerOpen(!sideDrawerClose)} />}
+      {sideDrawerClose && <BackDrop clicked={() => sideDrawerOpen(!sideDrawerClose)} />}
+      <Nav OpenMobileMenu={mobileMenu} styles={{ position: 'fixed' }} jump={gotoAboutSection} />
       <Slider />
       <div ref={addToRefs}>
-        <button onClick={gotoAboutSection}>Click to scroll </button>{' '}
-        {/* per buttona tai veikia gotoAboutSection */}
         <OurMission id="aa" />
       </div>
       <div ref={addToRefs}>
@@ -110,8 +109,12 @@ function Virstata(props) {
       <div path="/details" ref={addToRefs} className={classes.Certificate}>
         <h2>Sertifikatai</h2>
         <div className={classes.Certificates}>
-          {CertificateImg.map((CertificateImg) => (
-            <Certificates delay={CertificateImg.delay} CertificateSrc={CertificateImg.img} />
+          {CertificateImg.map((CertificateImgg) => (
+            <Certificates
+              key={CertificateImgg.id}
+              delay={CertificateImgg.delay}
+              CertificateSrc={CertificateImgg.img}
+            />
           ))}
         </div>
       </div>

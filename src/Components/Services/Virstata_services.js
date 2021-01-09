@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
+import { gsap } from 'gsap'
 import 'react-image-lightbox/style.css'
 import classes from './Virstata_services.css'
 import Nav from '../NavigationBar/Nav'
@@ -8,6 +9,8 @@ import IvairusApdailosDarbai from './servicesGallery/Images/Ivairus_apdailos_dar
 import TerasosPavesinesImg from './servicesGallery/Images/Terasos_pavesines/TerasosPavesinesImg'
 import TrinkeliuKlojimasImg from './servicesGallery/Images/Trinkeliu_klojimas/TrinkeliuKlojimasImg'
 import TvorosVartaiImg from './servicesGallery/Images/Tvoros_vartai/TvorosVartaiImg'
+import SideDrawer from '../NavigationBar/mobile/SideDrawer'
+import BackDrop from '../NavigationBar/mobile/Backdrop/BackDrop'
 
 import im1 from './servicesGallery/Images/betonavimas.jpg'
 import im2 from './servicesGallery/Images/apdaila.jpg'
@@ -15,10 +18,11 @@ import im3 from './servicesGallery/Images/terasa.jpg'
 import im4 from './servicesGallery/Images/trinkeles.jpg'
 import im5 from './servicesGallery/Images/tvora.jpg'
 
-function Virstata_services() {
+
+function VirstataServices() {
   const Services = [
     {
-      id: 0,
+      id: '0',
       imagess: BetonavimasImg,
       title: 'Betonavimo darbai',
       description:
@@ -26,105 +30,126 @@ function Virstata_services() {
       background: im1,
     },
     {
-      id: 1,
+      id: '1',
       imagess: IvairusApdailosDarbai,
-      title: 'Ivairūs Apdailos Darbai',
+      title: 'Apdailos Darbai',
       description: 'bb',
       background: im2,
     },
     {
-      id: 2,
+      id: '2',
       imagess: TerasosPavesinesImg,
       title: 'Terasos ir Pavesinės',
       description: 'cc',
       background: im3,
     },
     {
-      id: 3,
+      id: '3',
       imagess: TrinkeliuKlojimasImg,
       title: 'Trinkelių Klojimas',
       description: 'dd',
       background: im4,
     },
     {
-      id: 3,
+      id: '4',
       imagess: TvorosVartaiImg,
       title: 'Tvoros ir Vartai',
       description: 'dd',
       background: im5,
     },
   ]
-  const navMeniuStyle = { color: '#fff' }
-  const navStyle = {
-    display: 'flex',
-    justifyContent: 'space-between',
-    width: '100%',
-    padding: '10px 10px',
-    backgroundColor: 'rgba(65, 63, 63, 0.356)',
-    zIndex: '1',
-    boxShadow: '0 4px 3px 0px rgb(20, 20, 20)',
-  }
   const [setSelectedImg] = useState(null)
-  console.log(Services[0].imagess)
-  console.log(BetonavimasImg)
 
-  const [active, setActive] = useState(0)
+  const [ active, setActive ] = useState(0)
+const headerRef = useRef(null)
 
+const revealRefs = useRef([])
+revealRefs.current = []
+
+useEffect(() => {
+  gsap.from(headerRef.current, {
+    autoAlpha: 0,
+    ease: 'none',
+    delay: 1,
+  })
+
+  // eslint-disable-next-line no-unused-vars
+  revealRefs.current.forEach((el, index) => {
+    gsap.fromTo(
+      el,
+      {
+        autoAlpha: 0,
+      },
+      {
+        duration: 1,
+        autoAlpha: 1,
+        ease: 'none',
+        scrollTrigger: {
+          id: 'aa',
+          trigger: el,
+          start: 'top center+=250',
+          toggleActions: 'play none none reverse',
+        },
+      },
+    )
+  })
+}, [])
+
+const addToRefs = (el) => {
+  if (el && !revealRefs.current.includes(el)) {
+    revealRefs.current.push(el)
+  }
+}
+  const aboutSection = useRef(null)
   function handleIdChange(e) {
+      window.scrollTo({
+        top: aboutSection.current.offsetTop - 40,
+        behavior: 'smooth',
+      })
     setActive(e.target.id)
-    console.log(e.target.id)
     return setActive(e.target.id)
   }
 
-  return (
-    <div style={{ margin: 0 }}>
-      <Nav stylesMeniu={navMeniuStyle} styles={navStyle} />
-      <h2 style={{ textTransform: 'uppercase', textAlign: 'center' }}>Pasirinkite paslaugą</h2>
-      <div className={classes.Filter}>
-        {Services.map((Services) => (
-          <div
-            className={classes.Filter_Item}
-            style={{
-              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(${Services.background})`,
-            }}
-            id={Services.id}
-            onClick={handleIdChange}
-          >
-            {' '}
-            {Services.title}{' '}
-          </div>
-        ))}
-      </div>
+  const [sideDrawerClose, sideDrawerOpen] = useState(false)
+  const mobileMenu = () => sideDrawerOpen(!sideDrawerClose)
 
-      <div className={classes.services}>
-        {/* {Services.id = 0 ? : Services.map((Services) =>
-            < ImageGrid
-            title={Services.title}
-            description={Services.description}
-            items={Services.imagess}
-            setSelectedImg={setSelectedImg} />
-          ) } */}
+  
+    return (
+      <div style={{ margin: 0 }}>
+        {sideDrawerClose && <SideDrawer clicked={() => sideDrawerOpen(!sideDrawerClose)} />}
+        {sideDrawerClose && <BackDrop clicked={() => sideDrawerOpen(!sideDrawerClose)} />}
+        <Nav OpenMobileMenu={mobileMenu} style={{ display: 'fix' }} />
+        <h2 style={{ textTransform: 'uppercase', textAlign: 'center' }}>Pasirinkite paslaugą</h2>
+        <div className={classes.Filter}>
+          {/* // eslint-disable-next-line no-shadow */}
+          {Services.map((Servicees) => (
+            <div
+              className={classes.Filter_Item}
+              style={{
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(${Servicees.background})`,
+              }}
+              id={Servicees.id}
+              key={Servicees.id}
+              onClick={handleIdChange}
+              role="button"
+              onKeyDown={handleIdChange}
+              tabIndex={0}
+            >
+              {Servicees.title}
+            </div>
+          ))}
+        </div>
 
-        <ImageGrid
-          title={Services[active].title}
-          description={Services[active].description}
-          items={Services[active].imagess}
-          setSelectedImg={setSelectedImg}
-        />
+        <div ref={aboutSection} className={classes.servicees}>
+          <ImageGrid
+            titlee={Services[active].title}
+            description={Services[active].description}
+            items={Services[active].imagess}
+            setSelectedImg={setSelectedImg}
+            ref={addToRefs}
+          />
+        </div>
       </div>
-    </div>
-  )
+    )
 }
-export default Virstata_services
-
-// const navMeniuStyle = {
-//   color: '#000'}
-// const navStyle = {
-//   display: 'flex',
-//   position: 'static',
-//   justifyContent: 'space-between',
-//   width: '100%',
-//   padding:    '10px 10px',
-//     color:'black',
-//     backgroundColor: 'rgba(0, 0, 0, 0.1)',
-// }
+export default VirstataServices

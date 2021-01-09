@@ -1,19 +1,23 @@
 .meniu {
-  width: 65%;
-  margin-top: 4%;
+  display: flex;
+  justify-content:space-around;
+  width: 60%;
   list-style: none;
+  color:#fff;
+  vertical-align: middle;
+  padding:0;
 }
 .meniu span {
-  color: rgb(0, 0, 0);
-  text-decoration: none;
+  color:#fff;
+  vertical-align: middle;
 }
-.meniu li {
-  display: inline-block;
-  margin-right: 10%;
+.meniu a{ 
+  vertical-align: middle;
 }
+
 .meniu li span:link,
 .meniu li span:visited {
-  padding: 3px 0px;
+  padding:0;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 90%;
@@ -21,7 +25,14 @@
   transition: border-bottom 0.2s;
 }
 .meniu li span:hover,
-.meniu li span:active {
+.meniu li span:active,
+.meniu li:active {
   border-bottom: 2px solid #61892f;
   box-shadow: #1f0d0d;
+}
+
+@media only screen and (max-width: 800px) {
+  .meniu {
+  display: none;
+}
 }

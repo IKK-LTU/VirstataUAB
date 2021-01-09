@@ -1,20 +1,22 @@
-.ServiceList {
+.ServiceListt {
   background-color: rgba(235, 235, 235, 0.178);
   border-radius: 5px;
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: space-between;
   width: 250px;
   height: 400px;
   flex-wrap: wrap;
   margin: 5% 0;
+  cursor: pointer;
 }
-.ServiceList:hover {
+.ServiceListt:hover {
   opacity: 1;
   background-color: rgba(216, 202, 202, 0.178);
 }
 
-.ServiceList h4 {
+.ServiceListt h4 {
   text-transform: uppercase;
   color: rgb(255, 255, 255);
   font-size: 20px;
@@ -29,13 +31,12 @@
   display: flex;
 }
 
-.ServiceList p {
-  overflow: hidden;
+.ServiceListt p {
+  display: flex;
   text-decoration: none;
   font-size: 1.5em;
   margin-bottom: 0.83em;
   font-size: 90%;
-  line-height: 145%;
   letter-spacing: 1px;
   font-weight: 520;
   font-size: 15px;
@@ -44,4 +45,97 @@
   display: flex;
   flex-direction: column;
   justify-items: baseline;
+  overflow: hidden;
+  word-wrap: break-word;
 }
+.ServiceListt li{
+    word-wrap: break-word;
+  }
+.ServiceListt {
+    width: 250px;
+    height: 300px;
+  }
+@media only screen and (max-width: 600px) {
+ .ServiceListt {
+    width: 250px;
+    height: 300px;
+  }
+.ServiceListt p {
+  line-height: 140%;
+  font-weight: 400;
+  font-size: 12px;
+  width: 80%;
+  
+}
+.ServiceListt h4 {
+  font-size: 14px;
+}
+}
+@media only screen and (min-width: 600px) {
+ .ServiceListt {
+    width: 250px;
+    height: 300px;
+  }
+.ServiceListt p {
+  line-height: 140%;
+  font-weight: 400;
+  font-size: 12px;
+  width: 80%;
+}
+}
+@media only screen and (min-width: 768px) {
+  .ServiceListt {
+    width: 250px;
+    height: 300px;
+  }
+  .ServiceListt h4 {
+  font-size: 15px;
+}
+.ServiceListt p {
+  line-height: 140%;
+  font-weight: 400;
+  font-size: 13px;
+  width: 80%;
+}
+}
+
+ @media only screen and (min-width: 992px) {
+    .ServiceListt {
+    width: 200px;
+    height: 300px;
+  }
+  .ServiceListt h4 {
+  font-size: 15px;
+}
+.ServiceListt p {
+  line-height: 140%;
+  font-weight: 400;
+  font-size: 13px;
+  width: 80%;
+}
+}
+
+@media only screen and (min-width: 1200px) {
+  .ServiceListt {
+    width: 220px;
+    height: 350px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .ServiceListt {
+    width: 350px;
+    height: 400px;
+  }
+  
+  .ServiceListt h4 {
+  font-size: 20px;
+}
+.ServiceListt p {
+  line-height: 140%;
+  font-weight: 500;
+  font-size: 15px;
+  width: 80%;
+}
+}
+
+

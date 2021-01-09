@@ -1,62 +1,52 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 import Wall from '../../Img/siena.jpeg'
 import classes from './Services.css'
 import ServiceList from './ServiceList/ServiceList'
 
-const Service = [
-  {
-    headline: 'Betonavimo Darbai',
-    Text:
-      'Pamatai gali būti gręžtiniai, juostiniai, stulpiniai, priklausomai nuo statomo pastato, būsimųjo apkrovų, grunto ypatybių. Kokie pamatai bus įrengiami, numatoma pastato projekte atlikus grunto tyrimus...',
-    id: 1,
-  },
-
-  {
-    headline: 'TVOROS IR TERASOS',
-    Text:
-      'Pamatai gali būti gręžtiniai, juostiniai, stulpiniai,priklausomai nuo statomo pastato, būsimųjo apkrovų, grunto ypatybių...',
-    id: 2,
-  },
-
-  {
-    headline: 'TERASOS, BEI PAVĖSINĖS',
-    Text:
-      'Pamatai gali būti gręžtiniai, juostiniai, stulpiniai, priklausomai nuo statomo pastato, būsimųjo apkrovų, grunto ypatybių...',
-    id: 3,
-  },
-
-  {
-    headline: 'TRINKELIU KLOJIMAS',
-    Text:
-      'Pamatai gali būti gręžtiniai, juostiniai, stulpiniai, priklausomai nuo statomo pastato...',
-    id: 4,
-  },
-  {
-    headline: 'APDAILOS DARBAI',
-    Text: 'aaa',
-    id: 5,
-  },
-]
-class Services extends Component {
-  render() {
-    return (
-      <div
-        className={classes.Services}
-        style={{
-          backgroundAttachment: 'fixed',
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(${Wall})`,
-        }}
-      >
-        <h2> MŪSŲ ATLIEKAMI DARBAI</h2>
-        <div className={classes.ServiceList}>
-          {Service.map((Service, index) => (
-            <ServiceList key={Service.id} headline={Service.headline} text={Service.Text} />
-          ))}
-        </div>
+function Services() {
+  return (
+    <div
+      className={classes.ServicesStyle}
+      style={{
+        backgroundAttachment: 'fixed',
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(${Wall})`,
+      }}
+    >
+      <h2> MŪSŲ ATLIEKAMI DARBAI</h2>
+      <div className={classes.SserviceList}>
+        <ServiceList
+          headline="Betonavimo Darbai"
+          textOne="Pamatai ,atraminės sienelės, poliai"
+          textTwo="Perdangu betonavimas"
+          textThree="Stulpų betonavimas"
+          textFour="Slenkačių vartų pagrindo betonavimas"
+        />
+        <ServiceList headline="APDAILOS DARBAI"
+          textOne="Pagrindo paruošimas, dažymas"
+          textTwo="Gipso sūkimas"
+          textThree="Plyteliu klijavimas, gruntavimas"
+          textFour="Mediniai apdailos darbai" />
+        <ServiceList
+          headline="TERASOS, BEI PAVĖSINĖS"
+          textOne="Įvairių tipų terasos ir pavėsinės"
+          textTwo="Terasos poliu betonavima"
+          textThree="Medžio paruošimas- lakavimas, dažymas"
+          textFour="Medienos sutvirtinimas su betonu"
+        />
+        <ServiceList headline="TRINKELIU KLOJIMAS"
+          textOne="Įvairiu rūšiu trinkelių klojimas"
+           textTwo="Grunto įvertinimas ir pagrindo paruošimas"
+           textThree="Trinkelių klojimas"
+           textFour="Trinkelių tarpų užpildymas" />
+        <ServiceList headline="TVOROS IR VARTAI"
+          textOne="Metalinės ir Medinės tvoros bei vartai"
+           textTwo=" Tvorų ir vartų dažymas"
+           textThree="Tvirtinimas- sūkimas"
+           textFour="Pagrindo paruošimas sulygiavimas" />
       </div>
-    )
-  }
+    </div>
+  )
 }
 
 export default Services

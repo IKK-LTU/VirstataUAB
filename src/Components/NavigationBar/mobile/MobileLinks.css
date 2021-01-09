@@ -1,0 +1,25 @@
+.links {
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  justify-content:space-around;
+}
+.linksfacebook,
+.linkstwitter,
+.linksinstagram {
+  transition: color 0.2s;
+  font-size: 150%;
+}
+.linksfacebook,
+.linksfacebook a:hover {
+  color: #3b5998;
+}
+.linkstwitter,
+.linkstwitter a:hover {
+  color: #55acee;
+}
+.linksinstagram,
+.linksinstagram a:hover {
+  color: #e95950;
+  border-radius: 13px;
+}

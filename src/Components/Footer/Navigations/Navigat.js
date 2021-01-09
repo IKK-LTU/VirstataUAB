@@ -6,19 +6,27 @@ const Navigat = () => (
   <div className={classes.Navigatmeniu}>
     <ul>
       <Link to="/">
-        <li>Pagrindinis</li>
+        <li>
+          <span>Pagrindinis</span>
+        </li>
       </Link>
       <Link to="/paslaugos">
-        <li>Paslaugos</li>
+        <li>
+          <span>Paslaugos</span>
+        </li>
       </Link>
-      <Link to="/apie">
-        <li>Apie UAB "Virstata"</li>
+
+      <Link to="/">
+        <li>
+          <span> Apie UAB Virstata</span>
+        </li>
       </Link>
       <Link to="/kontaktai">
-        <li>Kontaktai</li>
+        <li>
+          <span>Kontaktai</span>
+        </li>
       </Link>
     </ul>
   </div>
 )
-
 export default Navigat

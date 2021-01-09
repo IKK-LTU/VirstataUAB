@@ -3,9 +3,6 @@
   color: #fff;
   display: block;
   align-items: center;
-  padding: 3%;
-  margin-top: -5%;
-  float: left;
   /* background-color: rgba(197, 197, 197, 0.089);
     border-radius: 20px; */
 }
@@ -13,5 +10,13 @@
 .Title h1 {
   text-transform: uppercase;
   word-spacing: 4px;
-  font-size: 200%;
+  font-size: 150%;
+}
+
+@media only screen and (max-width: 600px) {
+  .Title h1 {
+  text-transform: uppercase;
+  word-spacing: 4px;
+  font-size: 80%;
+}
 }

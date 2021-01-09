@@ -1,9 +1,24 @@
 .Nav {
   display: flex;
-  position: fixed;
   justify-content: space-between;
   width: 100%;
-  padding: 10px 10px;
   background-color: rgba(65, 63, 63, 0.356);
+  z-index: 1;
   box-shadow: 0 8px 6px -6px black;
+  color:#fff;
+  padding:0;
 }
+.links ul{
+  width:10px;
+  padding:0;
+}
+/* const navStyle = {
+    display: 'flex',
+    position: 'fixed',
+    justifyContent: 'space-between',
+    width: '100%',
+    padding: '10px 10px',
+    backgroundColor: 'rgba(65, 63, 63, 0.356)',
+    zIndex: '1',
+    boxShadow: '0 4px 3px 0px rgb(20, 20, 20)',
+  } */

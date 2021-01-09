@@ -1,0 +1,34 @@
+.toggleButton {
+    cursor: pointer;
+    vertical-align: middle;
+    background:none;
+    border: none;
+    border-radius:0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: auto 1%;
+}
+.toggleButtonIcon {
+    
+    color: #e2e4e2;
+    width: 80px;
+    height: 50px;
+}
+
+.toggleButton button{
+    
+    color: #e2e4e2;
+    width: 80px;
+    height: 50px;
+}
+.toggleButtonIcon:hover {
+    color: #3ccc18;
+    width: 80px;
+    height: 50px;
+}
+
+@media only screen and (min-width: 800px) {
+  .toggleButton {
+  display: none;
+}
+}

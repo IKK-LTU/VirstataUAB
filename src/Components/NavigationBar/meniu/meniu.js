@@ -1,36 +1,34 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
-import Virstata from '../../Main/Virstata'
 import classes from './meniu.css'
 
-const Meniu = (props) => (
-  <ul className={classes.meniu}>
-    <Link to="/">
+const Meniu = ({ jump }) => (
+  <ul  className={classes.meniu}>
+    <Link style={{ textDecoration: 'none', margin:'auto' }} to="/">
       <li>
-        <span style={props.styles}>Pagrindinis</span>
+        <span >Pagrindinis</span>
       </li>
     </Link>
-    <Link to="/paslaugos">
+    <Link style={{ textDecoration: 'none', margin:'auto'  }} to="/paslaugos">
       <li>
-        <span style={props.styles}>Paslaugos</span>
+        <span>Paslaugos</span>
       </li>
     </Link>
 
-    <Link onClick={() => <Virstata jump={gotoAboutSection()} />} to="/">
+    <Link style={{ textDecoration: 'none', margin:'auto'  }} to="/" onClick={jump} jump={jump}>
       <li>
-        <span style={props.styles}>
-          {' '}
-          {/* kad cia paspaudus iskviest pas jo teva gotoAboutSection */}
-          Apie UAB "Virstata"
-        </span>
+        <span> Apie Įmonę</span>
       </li>
     </Link>
-    <Link to="/kontaktai">
+    <Link style={{ textDecoration: 'none', margin:'auto'  }} to="/kontaktai">
       <li>
-        <span style={props.styles}>Kontaktai</span>
+        <span>Kontaktai</span>
       </li>
     </Link>
   </ul>
 )
-
+Meniu.propTypes = {
+  jump: PropTypes.string.isRequired,
+}
 export default Meniu

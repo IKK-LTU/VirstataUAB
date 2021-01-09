@@ -1,5 +1,5 @@
 .OurMission {
-  padding: 10px;
+  padding: 10px 0;
   background-color: rgba(0, 0, 0, 0.1);
   margin: 0;
   height: auto;
@@ -34,4 +34,17 @@
 .OurMission_Icon {
   height: auto;
   width: 40%;
+}
+
+@media only screen and (max-width: 768px) {
+  .OurMission h1 {
+  font-size: 130%;
+}
+.OurMission h2 {
+  font-size: 100%;
+}
+  .OurMission_Icon {
+  height: auto;
+  width: 30%;
+}
 }

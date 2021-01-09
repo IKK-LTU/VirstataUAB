@@ -1,8 +1,10 @@
 .Foote {
+  display:relative;
   height: auto;
   text-decoration: none;
   background-color: #61892f; /*#61892f  #61fc07c9;*/
   font-size: 17px;
+  width: 100%;
 }
 .Foote ul {
   display: block;
@@ -13,4 +15,17 @@
   margin-bottom: 0px;
   display: block;
   text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .Foote ul  {
+  display: none;
+  
+}
+.Foote p {
+  padding: 20px 0;
+  margin: 0 10%;
+  width: 80%;
+  text-align: center;
+}
 }

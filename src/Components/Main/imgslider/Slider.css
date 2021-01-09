@@ -3,5 +3,15 @@
   width: 100%;
   background-size: cover;
   background-position: center;
+  overflow-x: hidden;
 }
+@media only screen and (max-width: 600px) {
+  .Slider {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
 /* background:  linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.2)); */
