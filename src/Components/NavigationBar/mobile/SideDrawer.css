@@ -1,0 +1,71 @@
+.sideDrawer {
+    height: 100%;
+    background: rgba(61, 57, 57, 0.932);
+    box-shadow: 2px 0px 5px rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    max-width: 500px;
+    width: 70%;
+    z-index: 200;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.sideDrawer ul {
+    height: 34%;
+    list-style: none;
+    display:flex;
+    flex-direction: column;
+    padding:0 0 10px 0;
+
+}
+.sideDrawer h1 {
+    color: #3ccc18;
+
+}
+.sideDrawer li {
+    
+    
+    height:25%;
+    border-radius: 6px;
+    
+}
+.mobileLinks {
+    border: 1px solid rgba(17, 17, 17, 0.63);
+    background: rgb(61, 57, 57);
+    color:#f8f8f8;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.sideDrawer li p {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    height: 100%;
+    width: 100%;
+    margin: 2% 0;
+    padding: 0;
+}
+.sideDrawer li a{
+    color:#f8f8f8;
+    text-decoration: none;
+    vertical-align: middle;
+    
+}
+.sideDrawer p:hover,
+.sideDrawer p:active {
+    color:#68b10a; 
+}
+.Close {
+    color: #000;
+    text-align: right;
+    width: 90% 1%;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 0;
+}
+.Close button {
+    padding: 0;
+}

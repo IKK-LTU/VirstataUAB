@@ -35,3 +35,16 @@
   height: auto;
   width: 40%;
 }
+
+@media only screen and (max-width: 768px) {
+  .OurMission h1 {
+  font-size: 130%;
+}
+.OurMission h2 {
+  font-size: 100%;
+}
+  .OurMission_Icon {
+  height: auto;
+  width: 30%;
+}
+}

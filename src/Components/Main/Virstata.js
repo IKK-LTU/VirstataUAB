@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect, useState  } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import classes from './Virstata.css'
@@ -8,12 +8,17 @@ import Services from './services/Services'
 import Nav from '../NavigationBar/Nav'
 import OurMission from './OurMission/OurMission'
 import Certificates from './certificates/certificates'
+import SideDrawer from '../NavigationBar/mobile/SideDrawer'
+import BackDrop from '../NavigationBar/mobile/Backdrop/BackDrop'
 
 import im1 from './certificates/Certificates_images/certificate_img.jpg'
 
 gsap.registerPlugin(ScrollTrigger)
 
 function Virstata() {
+
+   
+
   const CertificateImg = [
     { img: im1, delay: 2, id: 1 },
     { img: im1, delay: 2.5, id: 2 },
@@ -62,28 +67,35 @@ function Virstata() {
     if (el && !revealRefs.current.includes(el)) {
       revealRefs.current.push(el)
     }
-  }
+  } 
 
-  //  const scrollToSection = () => {
-  //     scroller.scrollTo("#about", {
-  //       duration: 800,
-  //       delay: 0,
-  //       smooth: "easeInOutQuart",
-  //     });
-  //   };
+  // MObile Meniu Listener
 
+  const [sideDrawerClose, sideDrawerOpen] = useState(false)
+ const mobileMenu = () => sideDrawerOpen(!sideDrawerClose)
+
+  
   const aboutSection = useRef(null)
   
   const gotoAboutSection = () =>
     window.scrollTo({
-      top: aboutSection.current.offsetTop - 140,
+      top: aboutSection.current.offsetTop - 10,
       behavior: 'smooth',
       delay: 1 ,
     })
   
   return (
     <div key={CertificateImg.id}>
-      <Nav styles={{ position: 'fixed' }} jump={gotoAboutSection} />
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+      <link rel="manifest" href="/site.webmanifest" />
+      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+      <meta name="msapplication-TileColor" content="#da532c" />
+      <meta name="theme-color" content="#544c4c" />
+      {sideDrawerClose && <SideDrawer clicked={() => sideDrawerOpen(!sideDrawerClose)} />}
+      {sideDrawerClose && <BackDrop clicked={() => sideDrawerOpen(!sideDrawerClose)} />}
+      <Nav OpenMobileMenu={mobileMenu} styles={{ position: 'fixed' }} jump={gotoAboutSection} />
       <Slider />
       <div ref={addToRefs}>
         <OurMission id="aa" />

@@ -1,10 +1,10 @@
 .ImageGrid {
   display: flex;
   width: 100%;
-  height: 100%;
   border-top: 1px solid #61892f;
   /* border-bottom: 1px solid #61892f; */
   vertical-align: middle;
+  padding: 5% 0;
   /* background-color:rgba(189, 188, 188, 0.301); */
   /* border-radius: 5px; */
 }
@@ -13,7 +13,6 @@
   flex-direction: column;
   justify-content: flex-start;
   width: 49%;
-  height: 100%;
   word-wrap: break-word;
 }
 .ImageGrid_Gallery h2 {
@@ -31,15 +30,25 @@
   .ImageGrid {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  height: 100%;
+  justify-content: space-between;
+  padding: 0;
 }
   .ImageGrid_Gallery {
-  width:  80%;
-  height: 40%;
+  width:  90%;
   word-wrap: break-word;
   margin: auto;
-  justify-content: space-around;
+  padding: 50px 0;
+  justify-content: space-between;
+}
+.ImageGrid_Gallery h2 {
+  letter-spacing: normal;
+  font-size: 110%;
+}
+.ImageGrid_Gallery p {
+  margin: 0;
+  letter-spacing: normal;
+  line-height: auto;
+  font-size: 80%;
 }
 
 }

@@ -22,6 +22,7 @@ $ig-transparent: rgba(0, 0, 0, 0) !default;
   width: 35%;
   // margin: 5% 4% 5% 5%;
   justify-content: center;
+  
 
   @media (max-width: $ig-small-screen) {
   
@@ -30,7 +31,9 @@ $ig-transparent: rgba(0, 0, 0, 0) !default;
       margin: auto;
     
   }
-  
+  @media only screen and (max-width: 992px) { 
+    padding:50px 0;
+  }
 
   
   .image-gallery-icon {

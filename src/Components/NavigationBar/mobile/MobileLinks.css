@@ -1,27 +1,9 @@
 .links {
   display: flex;
-  padding:0;
-  justify-content:space-around;
-  margin: 2%;
-}
-.links ul {
-  height: 100%;
+  flex-direction: row;
   width:100%;
+  justify-content:space-around;
 }
-.links li {
-  margin: 0;
-  height: 100%;
-  list-style: none;
-}
-.links a {
-  margin: 0;
-  height: 100%;
-}
-
-.links li:hover {
-  font-size: 150%;
-}
-
 .linksfacebook,
 .linkstwitter,
 .linksinstagram {
@@ -40,10 +22,4 @@
 .linksinstagram a:hover {
   color: #e95950;
   border-radius: 13px;
-}
-
-@media only screen and (max-width: 800px) {
-  .links {
-  display: none;
-}
 }

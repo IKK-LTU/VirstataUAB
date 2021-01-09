@@ -4,24 +4,24 @@ import { Link } from 'react-router-dom'
 import classes from './meniu.css'
 
 const Meniu = ({ jump }) => (
-  <ul className={classes.meniu}>
-    <Link to="/">
+  <ul  className={classes.meniu}>
+    <Link style={{ textDecoration: 'none', margin:'auto' }} to="/">
       <li>
-        <span>Pagrindinis</span>
+        <span >Pagrindinis</span>
       </li>
     </Link>
-    <Link to="/paslaugos">
+    <Link style={{ textDecoration: 'none', margin:'auto'  }} to="/paslaugos">
       <li>
         <span>Paslaugos</span>
       </li>
     </Link>
 
-    <Link to="/" onClick={jump} jump={jump}>
+    <Link style={{ textDecoration: 'none', margin:'auto'  }} to="/" onClick={jump} jump={jump}>
       <li>
-        <span> Apie UAB Virstata</span>
+        <span> Apie Įmonę</span>
       </li>
     </Link>
-    <Link to="/kontaktai">
+    <Link style={{ textDecoration: 'none', margin:'auto'  }} to="/kontaktai">
       <li>
         <span>Kontaktai</span>
       </li>

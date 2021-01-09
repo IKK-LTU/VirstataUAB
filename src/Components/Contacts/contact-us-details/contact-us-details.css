@@ -8,6 +8,7 @@
   color: #fff;
   letter-spacing: 1px;
   word-wrap: break-word;
+  overflow: hidden;
 }
 .contactUs_details_img,
 .contactUs_info {
@@ -50,4 +51,56 @@
   width: 35px;
   margin: 10px;
   text-decoration: uppercase;
+}
+
+
+ @media only screen and (max-width: 992px) {
+    .contactUs_details {
+  display: flex;
+flex-direction: column;
+  height: 100%;
+  padding:0;
+  
+}
+.contactUs_details_img,
+.contactUs_info {
+  display: flex;
+flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: 40px 0;
+  padding:0;
+}
+.contactUs_details_img img {
+  width: 100px;
+  height: 100px;
+  padding:0;
+}
+.icons {
+  height: 25px;
+  width: 25px;
+  margin: 5px;
+  padding:0;
+}
+.contactUs_info p {
+  font-size:100%;
+  padding:0;
+}
+
+}
+@media only screen and (max-width: 692px) {
+  .contactUs_info p {
+  font-size:60%;
+  padding:0;
+}
+.contactUs_info b {
+  font-size:100%;
+  padding:0;
+}
+.contactUs_details_img {
+  font-size: 80%;
+}
+.contactUs_details_img p{
+  width:90%;
+}
 }

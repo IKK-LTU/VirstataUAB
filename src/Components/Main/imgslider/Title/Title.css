@@ -12,3 +12,11 @@
   word-spacing: 4px;
   font-size: 150%;
 }
+
+@media only screen and (max-width: 600px) {
+  .Title h1 {
+  text-transform: uppercase;
+  word-spacing: 4px;
+  font-size: 80%;
+}
+}

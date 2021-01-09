@@ -9,6 +9,8 @@ import IvairusApdailosDarbai from './servicesGallery/Images/Ivairus_apdailos_dar
 import TerasosPavesinesImg from './servicesGallery/Images/Terasos_pavesines/TerasosPavesinesImg'
 import TrinkeliuKlojimasImg from './servicesGallery/Images/Trinkeliu_klojimas/TrinkeliuKlojimasImg'
 import TvorosVartaiImg from './servicesGallery/Images/Tvoros_vartai/TvorosVartaiImg'
+import SideDrawer from '../NavigationBar/mobile/SideDrawer'
+import BackDrop from '../NavigationBar/mobile/Backdrop/BackDrop'
 
 import im1 from './servicesGallery/Images/betonavimas.jpg'
 import im2 from './servicesGallery/Images/apdaila.jpg'
@@ -108,10 +110,15 @@ const addToRefs = (el) => {
     return setActive(e.target.id)
   }
 
+  const [sideDrawerClose, sideDrawerOpen] = useState(false)
+  const mobileMenu = () => sideDrawerOpen(!sideDrawerClose)
+
   
     return (
       <div style={{ margin: 0 }}>
-        <Nav style={{ display: 'fix' }} />
+        {sideDrawerClose && <SideDrawer clicked={() => sideDrawerOpen(!sideDrawerClose)} />}
+        {sideDrawerClose && <BackDrop clicked={() => sideDrawerOpen(!sideDrawerClose)} />}
+        <Nav OpenMobileMenu={mobileMenu} style={{ display: 'fix' }} />
         <h2 style={{ textTransform: 'uppercase', textAlign: 'center' }}>Pasirinkite paslaugą</h2>
         <div className={classes.Filter}>
           {/* // eslint-disable-next-line no-shadow */}

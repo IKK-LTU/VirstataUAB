@@ -63,7 +63,7 @@ function Form() {
           placeholder=""
           ref={register({ pattern: /^[A-Za-z]+$/i })}
         />
-        <input type="submit" value="Send" />
+        <input type="submit" value="Siųsti" />
       </form>
     </div>
   )

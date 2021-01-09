@@ -48,6 +48,7 @@
   width: 100%;
   
 }
+
 .Slide h3 {
   position: absolute;
   color: #fff;
@@ -90,3 +91,12 @@
   color: rgba(128, 129, 30, 0.863);
 }
 
+@media only screen and (max-width: 792px) {
+  .Slide h2 {
+  font-size: 130%;
+  
+}
+.Slide h3 {
+  font-size: 80%;
+}
+}
